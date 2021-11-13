@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> EP1000 Digital Fabrication and Prototyping </title>
+        <link rel="stylesheet" type="text/css" href="Css/style.css">
+        
+    <style>
+        html{background: url(Img/black.jpg) no-repeat fixed ; 
+            background-size: cover;}
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+        li{ float: left;}
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        li a:hover {background-color: 111}
+        li a, .dropbtn {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover, .dropdown:hover .dropbtn {
+        background-color:gray;}
+
+        li.dropdown { display: inline-block}
+
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            padding: 12px 16px;
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        .dropdown-content a:hover {background-color: #f1f1f1;}
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+    </head>
+    <body>
+        <div id="container">
+            <div id= "header">
+                <h1>MY WEBSITE &#128187</h1>
+                <img src="Img/chopper.gif" alt="Tony Tony Chopper" height="600px" width="1550px">
+            </div>
+            <div id = "content">            
+                <div id="nav">
+                    <hr>
+                    <ul>
+               
+                        <li> <a href = "index.html" >Home</a> </li>
+
+                        <li> <a href = "about me.html" >About Me</a> </li>
+                        <li> <a href = "about me.html" >Blog</a> </li>
+            
+                        <li class = "dropdown">
+                            <a href = "My Project.html" 
+                                class = "dropbtn">My Project</a>
+                            <div class="dropdown-content">
+                                <a href="Fablab Safety.html">Fablab Safety</a>
+                                <a href="Project Management.html">Project Management</a>
+                                <a href="#">Web & Version Control</a>
+                                <a href="#">Computer Aided Design</a>
+                                <a href="#">3D Printing</a>  
+                                <a href="#">Contact</a>          
+                            </div>
+                        </li>    
+                    </ul>
+                </div>
+                <div id = "main">
+                    <hr>
+                    <h2>Welcome to my Website</h2>
+                    <p>This webpage is for me to put my projects and journey through this entire semester taking this module which is Digital Fabrication And Prototyping Fundamentals (EP1000).</p>
+                    <h3>What is Digital Fabrication And Prototyping Fundamentals (EP1000)?</h3>
+                    <p>
+                        This is an elective module, organised around a self-directed project where students develop design thinking and prototyping skills. Computer Aided Design techniques, 3D printing and laser cutting methods are used to develop the prototype. In addition, microcontroller are used to add intelligence to our project.
+                    </p>
+                </div>
+            </div>
+            <div id="footer">
+                Copyright &copy; 2021 Wan Li Xin Yuan
+            </div>
+        </div>
+    </body>
+</html>
