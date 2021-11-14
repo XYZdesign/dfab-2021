@@ -2,24 +2,42 @@
 <html>
     <head>
         <title> Blog </title>
+        <link rel="stylesheet" type="text/css" href="Css/style.css">
         <style>
-            html{background: url(Img/bg.jpg) no-repeat fixed center ; 
-              background-size: cover;
-            }
-            table {
-                font-family: Verdana, sans-serif;
-                border-collapse: bold;
-                width: 75%;
-                margin-left: 40px;
-              }
-            td, th {
-              border: 2.5px solid black;
-	            text-align: center;
-	            padding: 10px;
-            }
-            tr:nth-child(even) {
-              background-color: #cf9c2d;
-            }  
+        html{background: url(Img/bg.jpg) no-repeat fixed center ; 
+          background-size: cover;
+        }
+        table {
+          font-family: Verdana, sans-serif;
+          border-collapse: bold;
+          width: 75%;
+          margin-left: 40px;
+        }
+        td, th {
+          border: 2.5px solid black;
+	        text-align: center;
+	        padding: 10px;
+        }
+        tr:nth-child(even) {
+          background-color: #cf9c2d;
+        }
+        ul{
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color: #333;
+        }
+        li{ float: left; }
+        li a {
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;}
+        li a:hover {
+          background-color: 111
+        }
         </style>
      </head>
      <style>
@@ -27,6 +45,28 @@
      </style>
      <body>
         <h1 class="title" >Weekly documentation</h1>
+        <hr>
+
+        <ul>
+          <li> <a href = "index.html" >Home</a> </li>  
+          
+          <li> <a href = "about me.html" >About Me</a> </li>
+
+          <li> <a href = "blog.html" >Blog</a> </li>
+      
+          <li class = "dropdown">
+            <a href = "My Project.html" 
+                class = "dropbtn">My Project</a>
+            <div class="dropdown-content">
+                <a href="Fablab Safety.html">Fablab Safety</a>
+                <a href="Project Management.html">Project Management</a>
+                <a href="#">Web & Version Control</a>
+                <a href="#">Computer Aided Design</a>
+                <a href="#">3D Printing</a>  
+                <a href="#">Contact</a>          
+            </div>
+        </li> 
+        </ul>
         <hr>
 
         <table>
@@ -64,6 +104,10 @@
               
             </tr>
             
-          </table>
-     </body>
+        </table>
+        <hr>
+        <ul>
+          <li> <a href = "index.html" >Back</a> </li>
+        </ul>
+      </body>
 </html>
