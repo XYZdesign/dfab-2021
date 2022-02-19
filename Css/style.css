@@ -93,10 +93,14 @@ img.center {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-  }
+}
 .center{text-align: center;}
 video.center {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-  }
+}
+table.center{
+	margin-left: auto;
+ 	margin-right: auto;
+}
