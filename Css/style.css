@@ -86,3 +86,6 @@ li a:hover {background-color: 111}
 .green{
 	color: greenyellow;
 }
+h2.title {text-align: center;}
+h3.title {text-align: center;}
+h4.title {text-align: center;}
