@@ -113,6 +113,6 @@ tr:nth-child(even).color {
 }
 td, th {
 	border: 2.5px solid white;
-	  text-align: center;
-	  padding: 10px;
+	text-align: center;
+	padding: 10px;
   }
