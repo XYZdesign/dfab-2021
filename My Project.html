@@ -199,7 +199,7 @@
     
         <br><h3 class="title">Video</h3>
         <video class="center" width="700" height="500"controls>
-            <source src="Video/Box making process.mp4" type="video/mp4">
+            <source src="Img/box making.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
     
@@ -620,6 +620,509 @@
             <font color="#FFFFFF">}</font>
             
         </pre>
+        <br><hr><br>
+        <h2 class="title">Additional Programming</h2>
+        <p class="center">One interesting factor this prouct gives is that if the user do not want to play musical notes he/she can change it so that it can play music. Hence this can turn into a 2 in 1 function.</p>
+        <p class="center">Below is a code that includes songs like: </p>
+        <p class="center">1. Starwars </p>
+        <p class="center">2. Pirate of the caribbean</p>
+        <p class="center">3. unravel </p>
+        <p class="center">The user can press the middle button to stop the music and change song.</p>
+        <pre>
+
+
+            <font color="#5e6d03">#define</font> <font color="#FFFFFF">NOTE_B0</font> &nbsp;<font color="#FFFFFF">31</font>
+            <font color="#5e6d03">#define</font> <font color="#FFFFFF">NOTE_C1</font> &nbsp;<font color="#FFFFFF">33</font>
+            <font color="#5e6d03">#define</font> <font color="#FFFFFF">NOTE_CS1</font> <font color="#FFFFFF">35</font>
+            <font color="#5e6d03">#define</font> <font color="#FFFFFF">NOTE_D1</font> &nbsp;<font color="#FFFFFF">37</font>
+            <font color="#5e6d03">#define</font> <font color="#FFFFFF">NOTE_DS1</font> <font color="#FFFFFF">39</font>
+            <font color="#5e6d03">#define</font> <font color="#FFFFFF">NOTE_E1</font> &nbsp;<font color="#FFFFFF">41</font>
+            <font color="#5e6d03">#define</font> <font color="#FFFFFF">NOTE_F1</font> &nbsp;<font color="#FFFFFF">44</font>
+            <font color="#5e6d03">#define</font> <font color="#FFFFFF">NOTE_FS1</font> <font color="#FFFFFF">46</font>
+            
+            <font color="#5e6d03">#define</font> <font color="#FFFFFF">NOTE_G1</font> &nbsp;<font color="#FFFFFF">49</font>
+            <font color="#5e6d03">#define</font> <font color="#FFFFFF">NOTE_GS1</font> <font color="#FFFFFF">52</font>
+            <font color="#5e6d03">#define</font> <font color="#FFFFFF">NOTE_A1</font> &nbsp;<font color="#FFFFFF">55</font>
+            <font color="#5e6d03">#define</font> <font color="#FFFFFF">NOTE_AS1</font> <font color="#FFFFFF">58</font>
+            <font color="#5e6d03">#define</font> <font color="#FFFFFF">NOTE_B1</font> &nbsp;<font color="#FFFFFF">62</font>
+            <font color="#5e6d03">#define</font> <font color="#FFFFFF">NOTE_C2</font> &nbsp;<font color="#FFFFFF">65</font>
+            <font color="#5e6d03">#define</font> <font color="#FFFFFF">NOTE_CS2</font> <font color="#FFFFFF">69</font>
+            <font color="#5e6d03">#define</font> <font color="#FFFFFF">NOTE_D2</font> &nbsp;<font color="#FFFFFF">73</font>
+            <font color="#5e6d03">#define</font> <font color="#FFFFFF">NOTE_DS2</font> <font color="#FFFFFF">78</font>
+            <font color="#5e6d03">#define</font> <font color="#FFFFFF">NOTE_E2</font> &nbsp;<font color="#FFFFFF">82</font>
+            <font color="#5e6d03">#define</font> <font color="#FFFFFF">NOTE_F2</font> &nbsp;<font color="#FFFFFF">87</font>
+            <font color="#5e6d03">#define</font> <font color="#FFFFFF">NOTE_FS2</font> <font color="#FFFFFF">93</font>
+            <font color="#5e6d03">#define</font> <font color="#FFFFFF">NOTE_G2</font> &nbsp;<font color="#FFFFFF">98</font>
+            <font color="#5e6d03">#define</font> <font color="#FFFFFF">NOTE_GS2</font> <font color="#FFFFFF">104</font>
+            <font color="#5e6d03">#define</font> <font color="#FFFFFF">NOTE_A2</font> &nbsp;<font color="#FFFFFF">110</font>
+            <font color="#5e6d03">#define</font> <font color="#FFFFFF">NOTE_AS2</font> <font color="#FFFFFF">117</font>
+            <font color="#5e6d03">#define</font> <font color="#FFFFFF">NOTE_B2</font> &nbsp;<font color="#FFFFFF">123</font>
+            <font color="#5e6d03">#define</font> <font color="#FFFFFF">NOTE_C3</font> &nbsp;<font color="#FFFFFF">131</font>
+            <font color="#5e6d03">#define</font> <font color="#FFFFFF">NOTE_CS3</font> <font color="#FFFFFF">139</font>
+            <font color="#5e6d03">#define</font> <font color="#FFFFFF">NOTE_D3</font> &nbsp;<font color="#FFFFFF">147</font>
+            <font color="#5e6d03">#define</font> <font color="#FFFFFF">NOTE_DS3</font> <font color="#FFFFFF">156</font>
+            <font color="#5e6d03">#define</font> <font color="#FFFFFF">NOTE_E3</font> &nbsp;<font color="#FFFFFF">165</font>
+            <font color="#5e6d03">#define</font> <font color="#FFFFFF">NOTE_F3</font> &nbsp;<font color="#FFFFFF">175</font>
+            <font color="#5e6d03">#define</font> <font color="#FFFFFF">NOTE_FS3</font> <font color="#FFFFFF">185</font>
+            <font color="#5e6d03">#define</font> <font color="#FFFFFF">NOTE_G3</font> &nbsp;<font color="#FFFFFF">196</font>
+            <font color="#5e6d03">#define</font> <font color="#FFFFFF">NOTE_GS3</font> <font color="#FFFFFF">208</font>
+            <font color="#5e6d03">#define</font> <font color="#FFFFFF">NOTE_A3</font> &nbsp;<font color="#FFFFFF">220</font>
+            <font color="#5e6d03">#define</font> <font color="#FFFFFF">NOTE_AS3</font> <font color="#FFFFFF">233</font>
+            <font color="#5e6d03">#define</font> <font color="#FFFFFF">NOTE_B3</font> &nbsp;<font color="#FFFFFF">247</font>
+            <font color="#5e6d03">#define</font> <font color="#FFFFFF">NOTE_C4</font> &nbsp;<font color="#FFFFFF">262</font>
+            <font color="#5e6d03">#define</font> <font color="#FFFFFF">NOTE_CS4</font> <font color="#FFFFFF">277</font>
+            <font color="#5e6d03">#define</font> <font color="#FFFFFF">NOTE_D4</font> &nbsp;<font color="#FFFFFF">294</font>
+            <font color="#5e6d03">#define</font> <font color="#FFFFFF">NOTE_DS4</font> <font color="#FFFFFF">311</font>
+            <font color="#5e6d03">#define</font> <font color="#FFFFFF">NOTE_E4</font> &nbsp;<font color="#FFFFFF">330</font>
+            <font color="#5e6d03">#define</font> <font color="#FFFFFF">NOTE_F4</font> &nbsp;<font color="#FFFFFF">349</font>
+            <font color="#5e6d03">#define</font> <font color="#FFFFFF">NOTE_FS4</font> <font color="#FFFFFF">370</font>
+            <font color="#5e6d03">#define</font> <font color="#FFFFFF">NOTE_G4</font> &nbsp;<font color="#FFFFFF">392</font>
+            <font color="#5e6d03">#define</font> <font color="#FFFFFF">NOTE_GS4</font> <font color="#FFFFFF">415</font>
+            <font color="#5e6d03">#define</font> <font color="#FFFFFF">NOTE_A4</font> &nbsp;<font color="#FFFFFF">440</font>
+            <font color="#5e6d03">#define</font> <font color="#FFFFFF">NOTE_AS4</font> <font color="#FFFFFF">466</font>
+            <font color="#5e6d03">#define</font> <font color="#FFFFFF">NOTE_B4</font> &nbsp;<font color="#FFFFFF">494</font>
+            <font color="#5e6d03">#define</font> <font color="#FFFFFF">NOTE_C5</font> &nbsp;<font color="#FFFFFF">523</font>
+            <font color="#5e6d03">#define</font> <font color="#FFFFFF">NOTE_CS5</font> <font color="#FFFFFF">554</font>
+            <font color="#5e6d03">#define</font> <font color="#FFFFFF">NOTE_D5</font> &nbsp;<font color="#FFFFFF">587</font>
+            <font color="#5e6d03">#define</font> <font color="#FFFFFF">NOTE_DS5</font> <font color="#FFFFFF">622</font>
+            <font color="#5e6d03">#define</font> <font color="#FFFFFF">NOTE_E5</font> &nbsp;<font color="#FFFFFF">659</font>
+            <font color="#5e6d03">#define</font> <font color="#FFFFFF">NOTE_F5</font> &nbsp;<font color="#FFFFFF">698</font>
+            <font color="#5e6d03">#define</font> <font color="#FFFFFF">NOTE_FS5</font> <font color="#FFFFFF">740</font>
+            <font color="#5e6d03">#define</font> <font color="#FFFFFF">NOTE_G5</font> &nbsp;<font color="#FFFFFF">784</font>
+            <font color="#5e6d03">#define</font> <font color="#FFFFFF">NOTE_GS5</font> <font color="#FFFFFF">831</font>
+            <font color="#5e6d03">#define</font> <font color="#FFFFFF">NOTE_A5</font> &nbsp;<font color="#FFFFFF">880</font>
+            <font color="#5e6d03">#define</font> <font color="#FFFFFF">NOTE_AS5</font> <font color="#FFFFFF">932</font>
+            <font color="#5e6d03">#define</font> <font color="#FFFFFF">NOTE_B5</font> &nbsp;<font color="#FFFFFF">988</font>
+            <font color="#5e6d03">#define</font> <font color="#FFFFFF">NOTE_C6</font> &nbsp;<font color="#FFFFFF">1047</font>
+            <font color="#5e6d03">#define</font> <font color="#FFFFFF">NOTE_CS6</font> <font color="#FFFFFF">1109</font>
+            <font color="#5e6d03">#define</font> <font color="#FFFFFF">NOTE_D6</font> &nbsp;<font color="#FFFFFF">1175</font>
+            <font color="#5e6d03">#define</font> <font color="#FFFFFF">NOTE_DS6</font> <font color="#FFFFFF">1245</font>
+            <font color="#5e6d03">#define</font> <font color="#FFFFFF">NOTE_E6</font> &nbsp;<font color="#FFFFFF">1319</font>
+            <font color="#5e6d03">#define</font> <font color="#FFFFFF">NOTE_F6</font> &nbsp;<font color="#FFFFFF">1397</font>
+            <font color="#5e6d03">#define</font> <font color="#FFFFFF">NOTE_FS6</font> <font color="#FFFFFF">1480</font>
+            <font color="#5e6d03">#define</font> <font color="#FFFFFF">NOTE_G6</font> &nbsp;<font color="#FFFFFF">1568</font>
+            <font color="#5e6d03">#define</font> <font color="#FFFFFF">NOTE_GS6</font> <font color="#FFFFFF">1661</font>
+            <font color="#5e6d03">#define</font> <font color="#FFFFFF">NOTE_A6</font> &nbsp;<font color="#FFFFFF">1760</font>
+            <font color="#5e6d03">#define</font> <font color="#FFFFFF">NOTE_AS6</font> <font color="#FFFFFF">1865</font>
+            <font color="#5e6d03">#define</font> <font color="#FFFFFF">NOTE_B6</font> &nbsp;<font color="#FFFFFF">1976</font>
+            <font color="#5e6d03">#define</font> <font color="#FFFFFF">NOTE_C7</font> &nbsp;<font color="#FFFFFF">2093</font>
+            <font color="#5e6d03">#define</font> <font color="#FFFFFF">NOTE_CS7</font> <font color="#FFFFFF">2217</font>
+            <font color="#5e6d03">#define</font> <font color="#FFFFFF">NOTE_D7</font> &nbsp;<font color="#FFFFFF">2349</font>
+            <font color="#5e6d03">#define</font> <font color="#FFFFFF">NOTE_DS7</font> <font color="#FFFFFF">2489</font>
+            <font color="#5e6d03">#define</font> <font color="#FFFFFF">NOTE_E7</font> &nbsp;<font color="#FFFFFF">2637</font>
+            <font color="#5e6d03">#define</font> <font color="#FFFFFF">NOTE_F7</font> &nbsp;<font color="#FFFFFF">2794</font>
+            <font color="#5e6d03">#define</font> <font color="#FFFFFF">NOTE_FS7</font> <font color="#FFFFFF">2960</font>
+            <font color="#5e6d03">#define</font> <font color="#FFFFFF">NOTE_G7</font> &nbsp;<font color="#FFFFFF">3136</font>
+            <font color="#5e6d03">#define</font> <font color="#FFFFFF">NOTE_GS7</font> <font color="#FFFFFF">3322</font>
+            <font color="#5e6d03">#define</font> <font color="#FFFFFF">NOTE_A7</font> &nbsp;<font color="#FFFFFF">3520</font>
+            <font color="#5e6d03">#define</font> <font color="#FFFFFF">NOTE_AS7</font> <font color="#FFFFFF">3729</font>
+            <font color="#5e6d03">#define</font> <font color="#FFFFFF">NOTE_B7</font> &nbsp;<font color="#FFFFFF">3951</font>
+            <font color="#5e6d03">#define</font> <font color="#FFFFFF">NOTE_C8</font> &nbsp;<font color="#FFFFFF">4186</font>
+            <font color="#5e6d03">#define</font> <font color="#FFFFFF">NOTE_CS8</font> <font color="#FFFFFF">4435</font>
+            <font color="#5e6d03">#define</font> <font color="#FFFFFF">NOTE_D8</font> &nbsp;<font color="#FFFFFF">4699</font>
+            <font color="#5e6d03">#define</font> <font color="#FFFFFF">NOTE_DS8</font> <font color="#FFFFFF">4978</font>
+            
+            
+            <font color="#5e6d03">#define</font> <font color="#FFFFFF">ACTIVATED</font> <font color="#00979c">LOW</font>
+            
+            <font color="#5e6d03">#include</font> <font color="#005c5f">&#34;Adafruit_NeoPixel.h&#34;</font>
+            <font color="#5e6d03">#ifdef</font> <font color="#FFFFFF">__AVR__</font>
+            <font color="#5e6d03">#include</font> <font color="#434f54">&lt;</font><font color="#FFFFFF">avr</font><font color="#434f54">&#47;</font><font color="#FFFFFF">power</font><font color="#434f54">.</font><font color="#FFFFFF">h</font><font color="#434f54">&gt;</font> <font color="#434f54">&#47;&#47; Required for 16 MHz Adafruit Trinket</font>
+            <font color="#5e6d03">#endif</font>
+            <font color="#5e6d03">#include</font> <font color="#434f54">&lt;</font><font color="#d35400">Wire</font><font color="#434f54">.</font><font color="#FFFFFF">h</font><font color="#434f54">&gt;</font> 
+            <font color="#5e6d03">#include</font> <font color="#005c5f">&#34;LiquidCrystal_I2C.h&#34;</font>
+            
+            <b><font color="#d35400">LiquidCrystal_I2C</font></b> <font color="#FFFFFF">lcd</font> <font color="#434f54">=</font> <b><font color="#d35400">LiquidCrystal_I2C</font></b><font color="#FFFFFF">(</font><font color="#FFFFFF">0x27</font><font color="#434f54">,</font> <font color="#FFFFFF">16</font><font color="#434f54">,</font> <font color="#FFFFFF">2</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font>
+            <font color="#434f54">&#47;&#47;LiquidCrystal_I2C lcd(0x38, BACKLIGHT_PIN, POSITIVE); &nbsp;&#47;&#47; Set the LCD I2C address</font>
+            
+            <font color="#00979c">const</font> <font color="#00979c">int</font> <font color="#FFFFFF">PIEZO</font> <font color="#434f54">=</font> <font color="#FFFFFF">11</font><font color="#FFFFFF">;</font>
+            <font color="#5e6d03">#define</font> <font color="#FFFFFF">PIN</font> <font color="#FFFFFF">9</font>
+            <font color="#5e6d03">#define</font> <font color="#FFFFFF">NUMPIXELS</font> <font color="#FFFFFF">16</font>
+            <font color="#FFFFFF">Adafruit_NeoPixel</font> <font color="#FFFFFF">pixels</font><font color="#FFFFFF">(</font><font color="#FFFFFF">NUMPIXELS</font><font color="#434f54">,</font> <font color="#FFFFFF">PIN</font><font color="#434f54">,</font> <font color="#FFFFFF">NEO_GRB</font> <font color="#434f54">+</font> <font color="#FFFFFF">NEO_KHZ800</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font>
+            <font color="#5e6d03">#define</font> <font color="#FFFFFF">DELAYVAL</font> <font color="#FFFFFF">500</font>
+            
+             
+            <font color="#00979c">const</font> <font color="#00979c">int</font> <font color="#FFFFFF">c</font> <font color="#434f54">=</font> <font color="#FFFFFF">261</font><font color="#FFFFFF">;</font>
+            <font color="#00979c">const</font> <font color="#00979c">int</font> <font color="#FFFFFF">d</font> <font color="#434f54">=</font> <font color="#FFFFFF">294</font><font color="#FFFFFF">;</font>
+            <font color="#00979c">const</font> <font color="#00979c">int</font> <font color="#FFFFFF">e</font> <font color="#434f54">=</font> <font color="#FFFFFF">329</font><font color="#FFFFFF">;</font>
+            <font color="#00979c">const</font> <font color="#00979c">int</font> <font color="#FFFFFF">f</font> <font color="#434f54">=</font> <font color="#FFFFFF">349</font><font color="#FFFFFF">;</font>
+            <font color="#00979c">const</font> <font color="#00979c">int</font> <font color="#FFFFFF">g</font> <font color="#434f54">=</font> <font color="#FFFFFF">391</font><font color="#FFFFFF">;</font>
+            <font color="#00979c">const</font> <font color="#00979c">int</font> <font color="#FFFFFF">gS</font> <font color="#434f54">=</font> <font color="#FFFFFF">415</font><font color="#FFFFFF">;</font>
+            <font color="#00979c">const</font> <font color="#00979c">int</font> <font color="#FFFFFF">a</font> <font color="#434f54">=</font> <font color="#FFFFFF">440</font><font color="#FFFFFF">;</font>
+            <font color="#00979c">const</font> <font color="#00979c">int</font> <font color="#FFFFFF">aS</font> <font color="#434f54">=</font> <font color="#FFFFFF">456</font><font color="#FFFFFF">;</font>
+            <font color="#00979c">const</font> <font color="#00979c">int</font> <font color="#FFFFFF">b</font> <font color="#434f54">=</font> <font color="#FFFFFF">494</font><font color="#FFFFFF">;</font>
+            <font color="#00979c">const</font> <font color="#00979c">int</font> <font color="#FFFFFF">cH</font> <font color="#434f54">=</font> <font color="#FFFFFF">523</font><font color="#FFFFFF">;</font>
+            <font color="#00979c">const</font> <font color="#00979c">int</font> <font color="#FFFFFF">cSH</font> <font color="#434f54">=</font> <font color="#FFFFFF">554</font><font color="#FFFFFF">;</font>
+            <font color="#00979c">const</font> <font color="#00979c">int</font> <font color="#FFFFFF">dH</font> <font color="#434f54">=</font> <font color="#FFFFFF">587</font><font color="#FFFFFF">;</font>
+            <font color="#00979c">const</font> <font color="#00979c">int</font> <font color="#FFFFFF">dSH</font> <font color="#434f54">=</font> <font color="#FFFFFF">622</font><font color="#FFFFFF">;</font>
+            <font color="#00979c">const</font> <font color="#00979c">int</font> <font color="#FFFFFF">eH</font> <font color="#434f54">=</font> <font color="#FFFFFF">659</font><font color="#FFFFFF">;</font>
+            <font color="#00979c">const</font> <font color="#00979c">int</font> <font color="#FFFFFF">fH</font> <font color="#434f54">=</font> <font color="#FFFFFF">698</font><font color="#FFFFFF">;</font>
+            <font color="#00979c">const</font> <font color="#00979c">int</font> <font color="#FFFFFF">fSH</font> <font color="#434f54">=</font> <font color="#FFFFFF">740</font><font color="#FFFFFF">;</font>
+            <font color="#00979c">const</font> <font color="#00979c">int</font> <font color="#FFFFFF">gH</font> <font color="#434f54">=</font> <font color="#FFFFFF">784</font><font color="#FFFFFF">;</font>
+            <font color="#00979c">const</font> <font color="#00979c">int</font> <font color="#FFFFFF">gSH</font> <font color="#434f54">=</font> <font color="#FFFFFF">830</font><font color="#FFFFFF">;</font>
+            <font color="#00979c">const</font> <font color="#00979c">int</font> <font color="#FFFFFF">aH</font> <font color="#434f54">=</font> <font color="#FFFFFF">880</font><font color="#FFFFFF">;</font>
+             
+            <font color="#00979c">int</font> <font color="#FFFFFF">buttonSong</font> <font color="#434f54">=</font> <font color="#FFFFFF">8</font><font color="#FFFFFF">;</font>
+            <font color="#00979c">const</font> <font color="#00979c">int</font> <font color="#FFFFFF">BUTTON_C</font> <font color="#434f54">=</font> <font color="#FFFFFF">4</font><font color="#FFFFFF">;</font>
+            <font color="#00979c">const</font> <font color="#00979c">int</font> <font color="#FFFFFF">BUTTON_F</font> &nbsp;<font color="#434f54">=</font> <font color="#FFFFFF">6</font><font color="#FFFFFF">;</font>
+            <font color="#00979c">const</font> <font color="#00979c">int</font> <font color="#FFFFFF">BUTTON_D</font> <font color="#434f54">=</font> <font color="#FFFFFF">3</font><font color="#FFFFFF">;</font>
+            <font color="#00979c">const</font> <font color="#00979c">int</font> <font color="#FFFFFF">BUTTON_G</font> <font color="#434f54">=</font> <font color="#FFFFFF">2</font><font color="#FFFFFF">;</font>
+            <font color="#00979c">const</font> <font color="#00979c">int</font> <font color="#FFFFFF">BUTTON_E</font> <font color="#434f54">=</font> <font color="#FFFFFF">5</font><font color="#FFFFFF">;</font>
+            
+            <font color="#00979c">byte</font> <font color="#FFFFFF">Sound</font><font color="#FFFFFF">[</font><font color="#FFFFFF">8</font><font color="#FFFFFF">]</font> <font color="#434f54">=</font> <font color="#FFFFFF">{</font>
+             &nbsp;<font color="#FFFFFF">0b00001</font><font color="#434f54">,</font>
+             &nbsp;<font color="#FFFFFF">0b00011</font><font color="#434f54">,</font>
+             &nbsp;<font color="#FFFFFF">0b00101</font><font color="#434f54">,</font>
+             &nbsp;<font color="#FFFFFF">0b01001</font><font color="#434f54">,</font>
+             &nbsp;<font color="#FFFFFF">0b01001</font><font color="#434f54">,</font>
+             &nbsp;<font color="#FFFFFF">0b01011</font><font color="#434f54">,</font>
+             &nbsp;<font color="#FFFFFF">0b11011</font><font color="#434f54">,</font>
+             &nbsp;<font color="#FFFFFF">0b11000</font>
+            <font color="#FFFFFF">}</font><font color="#FFFFFF">;</font>
+            <font color="#00979c">const</font> <font color="#00979c">int</font> <font color="#FFFFFF">buzzerPin</font> <font color="#434f54">=</font> <font color="#FFFFFF">11</font><font color="#FFFFFF">;</font>
+            <font color="#00979c">int</font> <font color="#FFFFFF">counter</font> <font color="#434f54">=</font> <font color="#FFFFFF">0</font><font color="#FFFFFF">;</font>
+            <font color="#00979c">int</font> <font color="#FFFFFF">s</font> <font color="#434f54">=</font> <font color="#FFFFFF">0</font><font color="#FFFFFF">;</font>
+            <font color="#00979c">void</font> <font color="#5e6d03">setup</font><font color="#FFFFFF">(</font><font color="#FFFFFF">)</font>
+            <font color="#FFFFFF">{</font>
+             &nbsp;<b><font color="#d35400">Serial</font></b><font color="#434f54">.</font><font color="#d35400">begin</font><font color="#FFFFFF">(</font><font color="#FFFFFF">9600</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font>
+             &nbsp;
+             &nbsp;<font color="#d35400">pinMode</font><font color="#FFFFFF">(</font><font color="#FFFFFF">BUTTON_C</font><font color="#434f54">,</font> <font color="#00979c">INPUT</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font>
+             &nbsp;<font color="#d35400">digitalWrite</font><font color="#FFFFFF">(</font><font color="#FFFFFF">BUTTON_C</font><font color="#434f54">,</font><font color="#00979c">HIGH</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font>
+             &nbsp;
+             &nbsp;<font color="#d35400">pinMode</font><font color="#FFFFFF">(</font><font color="#FFFFFF">BUTTON_F</font><font color="#434f54">,</font> <font color="#00979c">INPUT</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font>
+             &nbsp;<font color="#d35400">digitalWrite</font><font color="#FFFFFF">(</font><font color="#FFFFFF">BUTTON_F</font><font color="#434f54">,</font><font color="#00979c">HIGH</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font>
+             &nbsp;&nbsp;&nbsp;
+             &nbsp;<font color="#d35400">pinMode</font><font color="#FFFFFF">(</font><font color="#FFFFFF">BUTTON_D</font><font color="#434f54">,</font> <font color="#00979c">INPUT</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font>
+             &nbsp;<font color="#d35400">digitalWrite</font><font color="#FFFFFF">(</font><font color="#FFFFFF">BUTTON_D</font><font color="#434f54">,</font><font color="#00979c">HIGH</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font>
+             &nbsp;
+             &nbsp;<font color="#d35400">pinMode</font><font color="#FFFFFF">(</font><font color="#FFFFFF">BUTTON_G</font><font color="#434f54">,</font> <font color="#00979c">INPUT</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font>
+             &nbsp;<font color="#d35400">digitalWrite</font><font color="#FFFFFF">(</font><font color="#FFFFFF">BUTTON_G</font><font color="#434f54">,</font><font color="#00979c">HIGH</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font>
+             &nbsp;
+             &nbsp;<font color="#d35400">pinMode</font> <font color="#FFFFFF">(</font><font color="#FFFFFF">BUTTON_E</font><font color="#434f54">,</font> <font color="#00979c">INPUT</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font>
+             &nbsp;<font color="#d35400">digitalWrite</font> <font color="#FFFFFF">(</font><font color="#FFFFFF">BUTTON_E</font><font color="#434f54">,</font> <font color="#00979c">HIGH</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font>
+             &nbsp;<font color="#d35400">pinMode</font><font color="#FFFFFF">(</font><font color="#FFFFFF">buzzerPin</font><font color="#434f54">,</font> <font color="#00979c">OUTPUT</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font>
+            
+             &nbsp;<font color="#434f54">&#47;&#47; set up the LCD&#39;s number of columns and rows:</font>
+             &nbsp;<font color="#FFFFFF">lcd</font><font color="#434f54">.</font><font color="#d35400">init</font><font color="#FFFFFF">(</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font>
+             &nbsp;<font color="#FFFFFF">lcd</font><font color="#434f54">.</font><font color="#d35400">backlight</font><font color="#FFFFFF">(</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font>
+             &nbsp;<font color="#FFFFFF">lcd</font><font color="#434f54">.</font><font color="#d35400">createChar</font><font color="#FFFFFF">(</font><font color="#FFFFFF">4</font><font color="#434f54">,</font> <font color="#FFFFFF">Sound</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font>
+             &nbsp;<font color="#5e6d03">#if</font> <font color="#FFFFFF">defined</font><font color="#FFFFFF">(</font><font color="#FFFFFF">__AVR_ATtiny85__</font><font color="#FFFFFF">)</font> <font color="#434f54">&amp;&amp;</font> <font color="#FFFFFF">(</font><font color="#FFFFFF">F_CPU</font> <font color="#434f54">==</font> <font color="#FFFFFF">16000000</font><font color="#FFFFFF">)</font>
+             &nbsp;<font color="#FFFFFF">clock_prescale_set</font><font color="#FFFFFF">(</font><font color="#FFFFFF">clock_div_1</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font>
+            <font color="#5e6d03">#endif</font>
+             &nbsp;<font color="#434f54">&#47;&#47; END of Trinket-specific code.</font>
+            
+             &nbsp;<font color="#FFFFFF">pixels</font><font color="#434f54">.</font><font color="#d35400">begin</font><font color="#FFFFFF">(</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font>
+            
+            <font color="#FFFFFF">}</font>
+            
+            
+            <font color="#434f54">&#47;&#47; notes in the melody:</font>
+            <font color="#00979c">int</font> <font color="#FFFFFF">melody</font><font color="#FFFFFF">[</font><font color="#FFFFFF">]</font> <font color="#434f54">=</font> <font color="#FFFFFF">{</font>
+            <font color="#FFFFFF">NOTE_AS4</font><font color="#434f54">,</font> <font color="#FFFFFF">NOTE_C5</font><font color="#434f54">,</font> <font color="#FFFFFF">NOTE_AS4</font><font color="#434f54">,</font> <font color="#FFFFFF">NOTE_A4</font><font color="#434f54">,</font> <font color="#FFFFFF">NOTE_G4</font><font color="#434f54">,</font> &nbsp;<font color="#FFFFFF">NOTE_C5</font><font color="#434f54">,</font> <font color="#FFFFFF">NOTE_AS4</font><font color="#434f54">,</font> <font color="#FFFFFF">NOTE_A4</font><font color="#434f54">,</font> <font color="#FFFFFF">NOTE_G4</font><font color="#434f54">,</font> <font color="#FFFFFF">NOTE_G4</font><font color="#434f54">,</font> <font color="#FFFFFF">NOTE_F4</font><font color="#434f54">,</font> <font color="#FFFFFF">0</font><font color="#434f54">,</font> <font color="#FFFFFF">0</font><font color="#434f54">,</font>
+            <font color="#FFFFFF">NOTE_DS4</font><font color="#434f54">,</font> <font color="#FFFFFF">NOTE_DS4</font><font color="#434f54">,</font> <font color="#FFFFFF">NOTE_F4</font><font color="#434f54">,</font> <font color="#FFFFFF">NOTE_D4</font><font color="#434f54">,</font> <font color="#FFFFFF">0</font><font color="#434f54">,</font> <font color="#FFFFFF">0</font><font color="#434f54">,</font> <font color="#FFFFFF">0</font><font color="#434f54">,</font> <font color="#FFFFFF">NOTE_D4</font><font color="#434f54">,</font> <font color="#FFFFFF">NOTE_D4</font><font color="#434f54">,</font> <font color="#FFFFFF">NOTE_D4</font><font color="#434f54">,</font> <font color="#FFFFFF">NOTE_D4</font><font color="#434f54">,</font> <font color="#FFFFFF">NOTE_D5</font><font color="#434f54">,</font> <font color="#FFFFFF">NOTE_D5</font><font color="#434f54">,</font>
+            <font color="#FFFFFF">NOTE_G3</font><font color="#434f54">,</font> <font color="#FFFFFF">NOTE_AS3</font><font color="#434f54">,</font> <font color="#FFFFFF">NOTE_C4</font><font color="#434f54">,</font> <font color="#FFFFFF">NOTE_G3</font><font color="#434f54">,</font> <font color="#FFFFFF">NOTE_G3</font><font color="#434f54">,</font> <font color="#FFFFFF">NOTE_AS3</font><font color="#434f54">,</font> <font color="#FFFFFF">NOTE_AS4</font><font color="#434f54">,</font> <font color="#FFFFFF">NOTE_A4</font><font color="#434f54">,</font> <font color="#FFFFFF">NOTE_A4</font><font color="#434f54">,</font> <font color="#FFFFFF">NOTE_A4</font><font color="#434f54">,</font> <font color="#FFFFFF">NOTE_AS4</font><font color="#434f54">,</font> <font color="#FFFFFF">NOTE_AS4</font><font color="#434f54">,</font> 
+            <font color="#FFFFFF">NOTE_G3</font><font color="#434f54">,</font> <font color="#FFFFFF">NOTE_AS3</font><font color="#434f54">,</font> <font color="#FFFFFF">NOTE_C4</font><font color="#434f54">,</font> <font color="#FFFFFF">NOTE_G3</font><font color="#434f54">,</font> <font color="#FFFFFF">NOTE_G3</font><font color="#434f54">,</font> <font color="#FFFFFF">NOTE_AS3</font><font color="#434f54">,</font>
+            <font color="#FFFFFF">}</font><font color="#FFFFFF">;</font>
+            <font color="#00979c">int</font> <font color="#FFFFFF">melody2</font><font color="#FFFFFF">[</font><font color="#FFFFFF">]</font> <font color="#434f54">=</font> <font color="#FFFFFF">{</font>
+            
+             &nbsp;<font color="#434f54">&#47;&#47; Jigglypuff&#39;s Song</font>
+             &nbsp;<font color="#FFFFFF">NOTE_D5</font><font color="#434f54">,</font><font color="#434f54">-</font><font color="#FFFFFF">4</font><font color="#434f54">,</font> <font color="#FFFFFF">NOTE_A5</font><font color="#434f54">,</font><font color="#FFFFFF">8</font><font color="#434f54">,</font> <font color="#FFFFFF">NOTE_FS5</font><font color="#434f54">,</font><font color="#FFFFFF">8</font><font color="#434f54">,</font> <font color="#FFFFFF">NOTE_D5</font><font color="#434f54">,</font><font color="#FFFFFF">8</font><font color="#434f54">,</font>
+             &nbsp;<font color="#FFFFFF">NOTE_E5</font><font color="#434f54">,</font><font color="#434f54">-</font><font color="#FFFFFF">4</font><font color="#434f54">,</font> <font color="#FFFFFF">NOTE_FS5</font><font color="#434f54">,</font><font color="#FFFFFF">8</font><font color="#434f54">,</font> <font color="#FFFFFF">NOTE_G5</font><font color="#434f54">,</font><font color="#FFFFFF">4</font><font color="#434f54">,</font>
+             &nbsp;<font color="#FFFFFF">NOTE_FS5</font><font color="#434f54">,</font><font color="#434f54">-</font><font color="#FFFFFF">4</font><font color="#434f54">,</font> <font color="#FFFFFF">NOTE_E5</font><font color="#434f54">,</font><font color="#FFFFFF">8</font><font color="#434f54">,</font> <font color="#FFFFFF">NOTE_FS5</font><font color="#434f54">,</font><font color="#FFFFFF">4</font><font color="#434f54">,</font>
+             &nbsp;<font color="#FFFFFF">NOTE_D5</font><font color="#434f54">,</font><font color="#434f54">-</font><font color="#FFFFFF">2</font><font color="#434f54">,</font>
+             &nbsp;<font color="#FFFFFF">NOTE_D5</font><font color="#434f54">,</font><font color="#434f54">-</font><font color="#FFFFFF">4</font><font color="#434f54">,</font> <font color="#FFFFFF">NOTE_A5</font><font color="#434f54">,</font><font color="#FFFFFF">8</font><font color="#434f54">,</font> <font color="#FFFFFF">NOTE_FS5</font><font color="#434f54">,</font><font color="#FFFFFF">8</font><font color="#434f54">,</font> <font color="#FFFFFF">NOTE_D5</font><font color="#434f54">,</font><font color="#FFFFFF">8</font><font color="#434f54">,</font>
+             &nbsp;<font color="#FFFFFF">NOTE_E5</font><font color="#434f54">,</font><font color="#434f54">-</font><font color="#FFFFFF">4</font><font color="#434f54">,</font> <font color="#FFFFFF">NOTE_FS5</font><font color="#434f54">,</font><font color="#FFFFFF">8</font><font color="#434f54">,</font> <font color="#FFFFFF">NOTE_G5</font><font color="#434f54">,</font><font color="#FFFFFF">4</font><font color="#434f54">,</font>
+             &nbsp;<font color="#FFFFFF">NOTE_FS5</font><font color="#434f54">,</font><font color="#434f54">-</font><font color="#FFFFFF">1</font><font color="#434f54">,</font>
+             &nbsp;<font color="#FFFFFF">NOTE_D5</font><font color="#434f54">,</font><font color="#434f54">-</font><font color="#FFFFFF">4</font><font color="#434f54">,</font> <font color="#FFFFFF">NOTE_A5</font><font color="#434f54">,</font><font color="#FFFFFF">8</font><font color="#434f54">,</font> <font color="#FFFFFF">NOTE_FS5</font><font color="#434f54">,</font><font color="#FFFFFF">8</font><font color="#434f54">,</font> <font color="#FFFFFF">NOTE_D5</font><font color="#434f54">,</font><font color="#FFFFFF">8</font><font color="#434f54">,</font>
+             &nbsp;<font color="#FFFFFF">NOTE_E5</font><font color="#434f54">,</font><font color="#434f54">-</font><font color="#FFFFFF">4</font><font color="#434f54">,</font> <font color="#FFFFFF">NOTE_FS5</font><font color="#434f54">,</font><font color="#FFFFFF">8</font><font color="#434f54">,</font> <font color="#FFFFFF">NOTE_G5</font><font color="#434f54">,</font><font color="#FFFFFF">4</font><font color="#434f54">,</font>
+             &nbsp;
+             &nbsp;<font color="#FFFFFF">NOTE_FS5</font><font color="#434f54">,</font><font color="#434f54">-</font><font color="#FFFFFF">4</font><font color="#434f54">,</font> <font color="#FFFFFF">NOTE_E5</font><font color="#434f54">,</font><font color="#FFFFFF">8</font><font color="#434f54">,</font> <font color="#FFFFFF">NOTE_FS5</font><font color="#434f54">,</font><font color="#FFFFFF">4</font><font color="#434f54">,</font>
+             &nbsp;<font color="#FFFFFF">NOTE_D5</font><font color="#434f54">,</font><font color="#434f54">-</font><font color="#FFFFFF">2</font><font color="#434f54">,</font>
+             &nbsp;<font color="#FFFFFF">NOTE_D5</font><font color="#434f54">,</font><font color="#434f54">-</font><font color="#FFFFFF">4</font><font color="#434f54">,</font> <font color="#FFFFFF">NOTE_A5</font><font color="#434f54">,</font><font color="#FFFFFF">8</font><font color="#434f54">,</font> <font color="#FFFFFF">NOTE_FS5</font><font color="#434f54">,</font><font color="#FFFFFF">8</font><font color="#434f54">,</font> <font color="#FFFFFF">NOTE_D5</font><font color="#434f54">,</font><font color="#FFFFFF">8</font><font color="#434f54">,</font>
+             &nbsp;<font color="#FFFFFF">NOTE_E5</font><font color="#434f54">,</font><font color="#434f54">-</font><font color="#FFFFFF">4</font><font color="#434f54">,</font> <font color="#FFFFFF">NOTE_FS5</font><font color="#434f54">,</font><font color="#FFFFFF">8</font><font color="#434f54">,</font> <font color="#FFFFFF">NOTE_G5</font><font color="#434f54">,</font><font color="#FFFFFF">4</font><font color="#434f54">,</font>
+             &nbsp;<font color="#FFFFFF">NOTE_FS5</font><font color="#434f54">,</font><font color="#434f54">-</font><font color="#FFFFFF">1</font><font color="#434f54">,</font>
+             &nbsp;
+            <font color="#FFFFFF">}</font><font color="#FFFFFF">;</font>
+            
+            <font color="#00979c">int</font> <font color="#FFFFFF">notes</font><font color="#FFFFFF">[</font><font color="#FFFFFF">]</font> <font color="#434f54">=</font> <font color="#FFFFFF">{</font>
+             &nbsp;&nbsp;&nbsp;<font color="#FFFFFF">NOTE_E4</font><font color="#434f54">,</font> <font color="#FFFFFF">NOTE_G4</font><font color="#434f54">,</font> <font color="#FFFFFF">NOTE_A4</font><font color="#434f54">,</font> <font color="#FFFFFF">NOTE_A4</font><font color="#434f54">,</font> <font color="#FFFFFF">0</font><font color="#434f54">,</font>
+             &nbsp;&nbsp;&nbsp;<font color="#FFFFFF">NOTE_A4</font><font color="#434f54">,</font> <font color="#FFFFFF">NOTE_B4</font><font color="#434f54">,</font> <font color="#FFFFFF">NOTE_C5</font><font color="#434f54">,</font> <font color="#FFFFFF">NOTE_C5</font><font color="#434f54">,</font> <font color="#FFFFFF">0</font><font color="#434f54">,</font>
+             &nbsp;&nbsp;&nbsp;<font color="#FFFFFF">NOTE_C5</font><font color="#434f54">,</font> <font color="#FFFFFF">NOTE_D5</font><font color="#434f54">,</font> <font color="#FFFFFF">NOTE_B4</font><font color="#434f54">,</font> <font color="#FFFFFF">NOTE_B4</font><font color="#434f54">,</font> <font color="#FFFFFF">0</font><font color="#434f54">,</font>
+             &nbsp;&nbsp;&nbsp;<font color="#FFFFFF">NOTE_A4</font><font color="#434f54">,</font> <font color="#FFFFFF">NOTE_G4</font><font color="#434f54">,</font> <font color="#FFFFFF">NOTE_A4</font><font color="#434f54">,</font> <font color="#FFFFFF">0</font><font color="#434f54">,</font>
+            
+             &nbsp;&nbsp;&nbsp;<font color="#FFFFFF">NOTE_E4</font><font color="#434f54">,</font> <font color="#FFFFFF">NOTE_G4</font><font color="#434f54">,</font> <font color="#FFFFFF">NOTE_A4</font><font color="#434f54">,</font> <font color="#FFFFFF">NOTE_A4</font><font color="#434f54">,</font> <font color="#FFFFFF">0</font><font color="#434f54">,</font>
+             &nbsp;&nbsp;&nbsp;<font color="#FFFFFF">NOTE_A4</font><font color="#434f54">,</font> <font color="#FFFFFF">NOTE_B4</font><font color="#434f54">,</font> <font color="#FFFFFF">NOTE_C5</font><font color="#434f54">,</font> <font color="#FFFFFF">NOTE_C5</font><font color="#434f54">,</font> <font color="#FFFFFF">0</font><font color="#434f54">,</font>
+             &nbsp;&nbsp;&nbsp;<font color="#FFFFFF">NOTE_C5</font><font color="#434f54">,</font> <font color="#FFFFFF">NOTE_D5</font><font color="#434f54">,</font> <font color="#FFFFFF">NOTE_B4</font><font color="#434f54">,</font> <font color="#FFFFFF">NOTE_B4</font><font color="#434f54">,</font> <font color="#FFFFFF">0</font><font color="#434f54">,</font>
+             &nbsp;&nbsp;&nbsp;<font color="#FFFFFF">NOTE_A4</font><font color="#434f54">,</font> <font color="#FFFFFF">NOTE_G4</font><font color="#434f54">,</font> <font color="#FFFFFF">NOTE_A4</font><font color="#434f54">,</font> <font color="#FFFFFF">0</font><font color="#434f54">,</font>
+            
+             &nbsp;&nbsp;&nbsp;<font color="#FFFFFF">NOTE_E4</font><font color="#434f54">,</font> <font color="#FFFFFF">NOTE_G4</font><font color="#434f54">,</font> <font color="#FFFFFF">NOTE_A4</font><font color="#434f54">,</font> <font color="#FFFFFF">NOTE_A4</font><font color="#434f54">,</font> <font color="#FFFFFF">0</font><font color="#434f54">,</font>
+             &nbsp;&nbsp;&nbsp;<font color="#FFFFFF">NOTE_A4</font><font color="#434f54">,</font> <font color="#FFFFFF">NOTE_C5</font><font color="#434f54">,</font> <font color="#FFFFFF">NOTE_D5</font><font color="#434f54">,</font> <font color="#FFFFFF">NOTE_D5</font><font color="#434f54">,</font> <font color="#FFFFFF">0</font><font color="#434f54">,</font>
+             &nbsp;&nbsp;&nbsp;<font color="#FFFFFF">NOTE_D5</font><font color="#434f54">,</font> <font color="#FFFFFF">NOTE_E5</font><font color="#434f54">,</font> <font color="#FFFFFF">NOTE_F5</font><font color="#434f54">,</font> <font color="#FFFFFF">NOTE_F5</font><font color="#434f54">,</font> <font color="#FFFFFF">0</font><font color="#434f54">,</font>
+             &nbsp;&nbsp;&nbsp;<font color="#FFFFFF">NOTE_E5</font><font color="#434f54">,</font> <font color="#FFFFFF">NOTE_D5</font><font color="#434f54">,</font> <font color="#FFFFFF">NOTE_E5</font><font color="#434f54">,</font> <font color="#FFFFFF">NOTE_A4</font><font color="#434f54">,</font> <font color="#FFFFFF">0</font><font color="#434f54">,</font>
+            
+             &nbsp;&nbsp;&nbsp;<font color="#FFFFFF">NOTE_A4</font><font color="#434f54">,</font> <font color="#FFFFFF">NOTE_B4</font><font color="#434f54">,</font> <font color="#FFFFFF">NOTE_C5</font><font color="#434f54">,</font> <font color="#FFFFFF">NOTE_C5</font><font color="#434f54">,</font> <font color="#FFFFFF">0</font><font color="#434f54">,</font>
+             &nbsp;&nbsp;&nbsp;<font color="#FFFFFF">NOTE_D5</font><font color="#434f54">,</font> <font color="#FFFFFF">NOTE_E5</font><font color="#434f54">,</font> <font color="#FFFFFF">NOTE_A4</font><font color="#434f54">,</font> <font color="#FFFFFF">0</font><font color="#434f54">,</font>
+             &nbsp;&nbsp;&nbsp;<font color="#FFFFFF">NOTE_A4</font><font color="#434f54">,</font> <font color="#FFFFFF">NOTE_C5</font><font color="#434f54">,</font> <font color="#FFFFFF">NOTE_B4</font><font color="#434f54">,</font> <font color="#FFFFFF">NOTE_B4</font><font color="#434f54">,</font> <font color="#FFFFFF">0</font><font color="#434f54">,</font>
+             &nbsp;&nbsp;&nbsp;<font color="#FFFFFF">NOTE_C5</font><font color="#434f54">,</font> <font color="#FFFFFF">NOTE_A4</font><font color="#434f54">,</font> <font color="#FFFFFF">NOTE_B4</font><font color="#434f54">,</font> <font color="#FFFFFF">0</font><font color="#434f54">,</font>
+            
+             &nbsp;&nbsp;&nbsp;<font color="#FFFFFF">NOTE_A4</font><font color="#434f54">,</font> <font color="#FFFFFF">NOTE_A4</font><font color="#434f54">,</font>
+            <font color="#FFFFFF">}</font><font color="#FFFFFF">;</font>
+            <font color="#00979c">int</font> <font color="#FFFFFF">noteDurations</font><font color="#FFFFFF">[</font><font color="#FFFFFF">]</font> <font color="#434f54">=</font> <font color="#FFFFFF">{</font>
+             &nbsp;
+            <font color="#FFFFFF">4.5</font><font color="#434f54">,</font> <font color="#FFFFFF">2.25</font><font color="#434f54">,</font> <font color="#FFFFFF">2.25</font><font color="#434f54">,</font> <font color="#FFFFFF">4.5</font><font color="#434f54">,</font> <font color="#FFFFFF">2.25</font><font color="#434f54">,</font> <font color="#FFFFFF">2.25</font><font color="#434f54">,</font> <font color="#FFFFFF">2.25</font><font color="#434f54">,</font> <font color="#FFFFFF">2.25</font><font color="#434f54">,</font> <font color="#FFFFFF">2.25</font><font color="#434f54">,</font> <font color="#FFFFFF">4.5</font><font color="#434f54">,</font> <font color="#FFFFFF">3</font><font color="#434f54">,</font> <font color="#FFFFFF">9</font><font color="#434f54">,</font> <font color="#FFFFFF">4.5</font><font color="#434f54">,</font> 
+            <font color="#FFFFFF">4.5</font><font color="#434f54">,</font> <font color="#FFFFFF">2.25</font><font color="#434f54">,</font> <font color="#FFFFFF">4.5</font><font color="#434f54">,</font> <font color="#FFFFFF">2.25</font><font color="#434f54">,</font> <font color="#FFFFFF">1.125</font><font color="#434f54">,</font> <font color="#FFFFFF">2.25</font><font color="#434f54">,</font> <font color="#FFFFFF">4.5</font><font color="#434f54">,</font> <font color="#FFFFFF">4.5</font><font color="#434f54">,</font> <font color="#FFFFFF">2.25</font><font color="#434f54">,</font> <font color="#FFFFFF">4.5</font><font color="#434f54">,</font> <font color="#FFFFFF">2.25</font><font color="#434f54">,</font> <font color="#FFFFFF">4.5</font><font color="#434f54">,</font> <font color="#FFFFFF">2.25</font><font color="#434f54">,</font> 
+            <font color="#FFFFFF">4.5</font><font color="#434f54">,</font> <font color="#FFFFFF">4.5</font><font color="#434f54">,</font> <font color="#FFFFFF">4.5</font><font color="#434f54">,</font> <font color="#FFFFFF">2.25</font><font color="#434f54">,</font> <font color="#FFFFFF">4.5</font><font color="#434f54">,</font> <font color="#FFFFFF">4.5</font><font color="#434f54">,</font> <font color="#FFFFFF">4.5</font><font color="#434f54">,</font> <font color="#FFFFFF">2.25</font><font color="#434f54">,</font> <font color="#FFFFFF">4.5</font><font color="#434f54">,</font> <font color="#FFFFFF">2.25</font><font color="#434f54">,</font> <font color="#FFFFFF">4.5</font><font color="#434f54">,</font> <font color="#FFFFFF">2</font><font color="#434f54">,</font> 
+            <font color="#FFFFFF">4.5</font><font color="#434f54">,</font> <font color="#FFFFFF">4.5</font><font color="#434f54">,</font> <font color="#FFFFFF">4.5</font><font color="#434f54">,</font> <font color="#FFFFFF">2.25</font><font color="#434f54">,</font> <font color="#FFFFFF">4.5</font><font color="#434f54">,</font> <font color="#FFFFFF">4.5</font><font color="#434f54">,</font>
+            <font color="#FFFFFF">}</font><font color="#FFFFFF">;</font>
+            
+            <font color="#00979c">int</font> <font color="#FFFFFF">durations</font><font color="#FFFFFF">[</font><font color="#FFFFFF">]</font> <font color="#434f54">=</font> <font color="#FFFFFF">{</font>
+             &nbsp;&nbsp;&nbsp;<font color="#FFFFFF">125</font><font color="#434f54">,</font> <font color="#FFFFFF">125</font><font color="#434f54">,</font> <font color="#FFFFFF">250</font><font color="#434f54">,</font> <font color="#FFFFFF">125</font><font color="#434f54">,</font> <font color="#FFFFFF">125</font><font color="#434f54">,</font>
+             &nbsp;&nbsp;&nbsp;<font color="#FFFFFF">125</font><font color="#434f54">,</font> <font color="#FFFFFF">125</font><font color="#434f54">,</font> <font color="#FFFFFF">250</font><font color="#434f54">,</font> <font color="#FFFFFF">125</font><font color="#434f54">,</font> <font color="#FFFFFF">125</font><font color="#434f54">,</font>
+             &nbsp;&nbsp;&nbsp;<font color="#FFFFFF">125</font><font color="#434f54">,</font> <font color="#FFFFFF">125</font><font color="#434f54">,</font> <font color="#FFFFFF">250</font><font color="#434f54">,</font> <font color="#FFFFFF">125</font><font color="#434f54">,</font> <font color="#FFFFFF">125</font><font color="#434f54">,</font>
+             &nbsp;&nbsp;&nbsp;<font color="#FFFFFF">125</font><font color="#434f54">,</font> <font color="#FFFFFF">125</font><font color="#434f54">,</font> <font color="#FFFFFF">375</font><font color="#434f54">,</font> <font color="#FFFFFF">125</font><font color="#434f54">,</font>
+            
+             &nbsp;&nbsp;&nbsp;<font color="#FFFFFF">125</font><font color="#434f54">,</font> <font color="#FFFFFF">125</font><font color="#434f54">,</font> <font color="#FFFFFF">250</font><font color="#434f54">,</font> <font color="#FFFFFF">125</font><font color="#434f54">,</font> <font color="#FFFFFF">125</font><font color="#434f54">,</font>
+             &nbsp;&nbsp;&nbsp;<font color="#FFFFFF">125</font><font color="#434f54">,</font> <font color="#FFFFFF">125</font><font color="#434f54">,</font> <font color="#FFFFFF">250</font><font color="#434f54">,</font> <font color="#FFFFFF">125</font><font color="#434f54">,</font> <font color="#FFFFFF">125</font><font color="#434f54">,</font>
+             &nbsp;&nbsp;&nbsp;<font color="#FFFFFF">125</font><font color="#434f54">,</font> <font color="#FFFFFF">125</font><font color="#434f54">,</font> <font color="#FFFFFF">250</font><font color="#434f54">,</font> <font color="#FFFFFF">125</font><font color="#434f54">,</font> <font color="#FFFFFF">125</font><font color="#434f54">,</font>
+             &nbsp;&nbsp;&nbsp;<font color="#FFFFFF">125</font><font color="#434f54">,</font> <font color="#FFFFFF">125</font><font color="#434f54">,</font> <font color="#FFFFFF">375</font><font color="#434f54">,</font> <font color="#FFFFFF">125</font><font color="#434f54">,</font>
+            
+             &nbsp;&nbsp;&nbsp;<font color="#FFFFFF">125</font><font color="#434f54">,</font> <font color="#FFFFFF">125</font><font color="#434f54">,</font> <font color="#FFFFFF">250</font><font color="#434f54">,</font> <font color="#FFFFFF">125</font><font color="#434f54">,</font> <font color="#FFFFFF">125</font><font color="#434f54">,</font>
+             &nbsp;&nbsp;&nbsp;<font color="#FFFFFF">125</font><font color="#434f54">,</font> <font color="#FFFFFF">125</font><font color="#434f54">,</font> <font color="#FFFFFF">250</font><font color="#434f54">,</font> <font color="#FFFFFF">125</font><font color="#434f54">,</font> <font color="#FFFFFF">125</font><font color="#434f54">,</font>
+             &nbsp;&nbsp;&nbsp;<font color="#FFFFFF">125</font><font color="#434f54">,</font> <font color="#FFFFFF">125</font><font color="#434f54">,</font> <font color="#FFFFFF">250</font><font color="#434f54">,</font> <font color="#FFFFFF">125</font><font color="#434f54">,</font> <font color="#FFFFFF">125</font><font color="#434f54">,</font>
+             &nbsp;&nbsp;&nbsp;<font color="#FFFFFF">125</font><font color="#434f54">,</font> <font color="#FFFFFF">125</font><font color="#434f54">,</font> <font color="#FFFFFF">125</font><font color="#434f54">,</font> <font color="#FFFFFF">250</font><font color="#434f54">,</font> <font color="#FFFFFF">125</font><font color="#434f54">,</font>
+            
+             &nbsp;&nbsp;&nbsp;<font color="#FFFFFF">125</font><font color="#434f54">,</font> <font color="#FFFFFF">125</font><font color="#434f54">,</font> <font color="#FFFFFF">250</font><font color="#434f54">,</font> <font color="#FFFFFF">125</font><font color="#434f54">,</font> <font color="#FFFFFF">125</font><font color="#434f54">,</font>
+             &nbsp;&nbsp;&nbsp;<font color="#FFFFFF">250</font><font color="#434f54">,</font> <font color="#FFFFFF">125</font><font color="#434f54">,</font> <font color="#FFFFFF">250</font><font color="#434f54">,</font> <font color="#FFFFFF">125</font><font color="#434f54">,</font>
+             &nbsp;&nbsp;&nbsp;<font color="#FFFFFF">125</font><font color="#434f54">,</font> <font color="#FFFFFF">125</font><font color="#434f54">,</font> <font color="#FFFFFF">250</font><font color="#434f54">,</font> <font color="#FFFFFF">125</font><font color="#434f54">,</font> <font color="#FFFFFF">125</font><font color="#434f54">,</font>
+             &nbsp;&nbsp;&nbsp;<font color="#FFFFFF">125</font><font color="#434f54">,</font> <font color="#FFFFFF">125</font><font color="#434f54">,</font> <font color="#FFFFFF">375</font><font color="#434f54">,</font> <font color="#FFFFFF">375</font><font color="#434f54">,</font>
+            
+             &nbsp;&nbsp;&nbsp;<font color="#FFFFFF">250</font><font color="#434f54">,</font> <font color="#FFFFFF">125</font><font color="#434f54">,</font><font color="#FFFFFF">}</font><font color="#FFFFFF">;</font>
+            <font color="#00979c">void</font> <font color="#FFFFFF">beep</font><font color="#FFFFFF">(</font><font color="#00979c">int</font> <font color="#FFFFFF">note1</font><font color="#434f54">,</font> <font color="#00979c">int</font> <font color="#FFFFFF">duration1</font><font color="#FFFFFF">)</font>
+            <font color="#FFFFFF">{</font>
+             &nbsp;<font color="#d35400">tone</font><font color="#FFFFFF">(</font><font color="#FFFFFF">buzzerPin</font><font color="#434f54">,</font> <font color="#FFFFFF">note1</font><font color="#434f54">,</font> <font color="#FFFFFF">duration1</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font>
+             &nbsp;<font color="#5e6d03">if</font><font color="#FFFFFF">(</font><font color="#FFFFFF">counter</font> <font color="#434f54">%</font> <font color="#FFFFFF">2</font> <font color="#434f54">==</font> <font color="#FFFFFF">0</font><font color="#FFFFFF">)</font>
+             &nbsp;<font color="#FFFFFF">{</font>
+             &nbsp;&nbsp;&nbsp;<font color="#d35400">delay</font><font color="#FFFFFF">(</font><font color="#FFFFFF">duration1</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font>
+             &nbsp;<font color="#FFFFFF">}</font>
+             &nbsp;<font color="#5e6d03">else</font>
+             &nbsp;<font color="#FFFFFF">{</font>
+             &nbsp;&nbsp;&nbsp;<font color="#d35400">delay</font><font color="#FFFFFF">(</font><font color="#FFFFFF">duration1</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font>
+             &nbsp;<font color="#FFFFFF">}</font>
+             
+             &nbsp;<font color="#434f54">&#47;&#47;Stop tone on buzzerPin</font>
+             &nbsp;<font color="#d35400">noTone</font><font color="#FFFFFF">(</font><font color="#FFFFFF">buzzerPin</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font>
+             
+             &nbsp;<font color="#d35400">delay</font><font color="#FFFFFF">(</font><font color="#FFFFFF">50</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font>
+             
+             &nbsp;<font color="#434f54">&#47;&#47;Increment counter</font>
+             &nbsp;<font color="#FFFFFF">counter</font><font color="#434f54">++</font><font color="#FFFFFF">;</font>
+             
+            <font color="#FFFFFF">}</font>
+            <font color="#00979c">void</font> <font color="#FFFFFF">firstSection</font><font color="#FFFFFF">(</font><font color="#FFFFFF">)</font>
+            <font color="#FFFFFF">{</font>
+             &nbsp;<font color="#FFFFFF">beep</font><font color="#FFFFFF">(</font><font color="#FFFFFF">a</font><font color="#434f54">,</font> <font color="#FFFFFF">500</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font>
+             &nbsp;<font color="#FFFFFF">beep</font><font color="#FFFFFF">(</font><font color="#FFFFFF">a</font><font color="#434f54">,</font> <font color="#FFFFFF">500</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font> &nbsp;&nbsp;&nbsp;
+             &nbsp;<font color="#FFFFFF">beep</font><font color="#FFFFFF">(</font><font color="#FFFFFF">a</font><font color="#434f54">,</font> <font color="#FFFFFF">500</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font>
+             &nbsp;<font color="#FFFFFF">beep</font><font color="#FFFFFF">(</font><font color="#FFFFFF">f</font><font color="#434f54">,</font> <font color="#FFFFFF">350</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font>
+             &nbsp;<font color="#FFFFFF">beep</font><font color="#FFFFFF">(</font><font color="#FFFFFF">cH</font><font color="#434f54">,</font> <font color="#FFFFFF">150</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font> &nbsp;
+             &nbsp;<font color="#FFFFFF">beep</font><font color="#FFFFFF">(</font><font color="#FFFFFF">a</font><font color="#434f54">,</font> <font color="#FFFFFF">500</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font>
+             &nbsp;<font color="#FFFFFF">beep</font><font color="#FFFFFF">(</font><font color="#FFFFFF">f</font><font color="#434f54">,</font> <font color="#FFFFFF">350</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font>
+             &nbsp;<font color="#FFFFFF">beep</font><font color="#FFFFFF">(</font><font color="#FFFFFF">cH</font><font color="#434f54">,</font> <font color="#FFFFFF">150</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font>
+             &nbsp;<font color="#FFFFFF">beep</font><font color="#FFFFFF">(</font><font color="#FFFFFF">a</font><font color="#434f54">,</font> <font color="#FFFFFF">650</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font>
+             
+             &nbsp;<font color="#d35400">delay</font><font color="#FFFFFF">(</font><font color="#FFFFFF">500</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font>
+             
+             &nbsp;<font color="#FFFFFF">beep</font><font color="#FFFFFF">(</font><font color="#FFFFFF">eH</font><font color="#434f54">,</font> <font color="#FFFFFF">500</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font>
+             &nbsp;<font color="#FFFFFF">beep</font><font color="#FFFFFF">(</font><font color="#FFFFFF">eH</font><font color="#434f54">,</font> <font color="#FFFFFF">500</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font>
+             &nbsp;<font color="#FFFFFF">beep</font><font color="#FFFFFF">(</font><font color="#FFFFFF">eH</font><font color="#434f54">,</font> <font color="#FFFFFF">500</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font> &nbsp;
+             &nbsp;<font color="#FFFFFF">beep</font><font color="#FFFFFF">(</font><font color="#FFFFFF">fH</font><font color="#434f54">,</font> <font color="#FFFFFF">350</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font>
+             &nbsp;<font color="#FFFFFF">beep</font><font color="#FFFFFF">(</font><font color="#FFFFFF">cH</font><font color="#434f54">,</font> <font color="#FFFFFF">150</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font>
+             &nbsp;<font color="#FFFFFF">beep</font><font color="#FFFFFF">(</font><font color="#FFFFFF">gS</font><font color="#434f54">,</font> <font color="#FFFFFF">500</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font>
+             &nbsp;<font color="#FFFFFF">beep</font><font color="#FFFFFF">(</font><font color="#FFFFFF">f</font><font color="#434f54">,</font> <font color="#FFFFFF">350</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font>
+             &nbsp;<font color="#FFFFFF">beep</font><font color="#FFFFFF">(</font><font color="#FFFFFF">cH</font><font color="#434f54">,</font> <font color="#FFFFFF">150</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font>
+             &nbsp;<font color="#FFFFFF">beep</font><font color="#FFFFFF">(</font><font color="#FFFFFF">a</font><font color="#434f54">,</font> <font color="#FFFFFF">650</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font>
+             
+             &nbsp;<font color="#d35400">delay</font><font color="#FFFFFF">(</font><font color="#FFFFFF">500</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font>
+            <font color="#FFFFFF">}</font>
+            <font color="#00979c">void</font> <font color="#FFFFFF">secondSection</font><font color="#FFFFFF">(</font><font color="#FFFFFF">)</font>
+            <font color="#FFFFFF">{</font>
+             &nbsp;<font color="#FFFFFF">beep</font><font color="#FFFFFF">(</font><font color="#FFFFFF">aH</font><font color="#434f54">,</font> <font color="#FFFFFF">500</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font>
+             &nbsp;<font color="#FFFFFF">beep</font><font color="#FFFFFF">(</font><font color="#FFFFFF">a</font><font color="#434f54">,</font> <font color="#FFFFFF">300</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font>
+             &nbsp;<font color="#FFFFFF">beep</font><font color="#FFFFFF">(</font><font color="#FFFFFF">a</font><font color="#434f54">,</font> <font color="#FFFFFF">150</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font>
+             &nbsp;<font color="#FFFFFF">beep</font><font color="#FFFFFF">(</font><font color="#FFFFFF">aH</font><font color="#434f54">,</font> <font color="#FFFFFF">500</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font>
+             &nbsp;<font color="#FFFFFF">beep</font><font color="#FFFFFF">(</font><font color="#FFFFFF">gSH</font><font color="#434f54">,</font> <font color="#FFFFFF">325</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font>
+             &nbsp;<font color="#FFFFFF">beep</font><font color="#FFFFFF">(</font><font color="#FFFFFF">gH</font><font color="#434f54">,</font> <font color="#FFFFFF">175</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font>
+             &nbsp;<font color="#FFFFFF">beep</font><font color="#FFFFFF">(</font><font color="#FFFFFF">fSH</font><font color="#434f54">,</font> <font color="#FFFFFF">125</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font>
+             &nbsp;<font color="#FFFFFF">beep</font><font color="#FFFFFF">(</font><font color="#FFFFFF">fH</font><font color="#434f54">,</font> <font color="#FFFFFF">125</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font> &nbsp;&nbsp;&nbsp;
+             &nbsp;<font color="#FFFFFF">beep</font><font color="#FFFFFF">(</font><font color="#FFFFFF">fSH</font><font color="#434f54">,</font> <font color="#FFFFFF">250</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font>
+             
+             &nbsp;<font color="#d35400">delay</font><font color="#FFFFFF">(</font><font color="#FFFFFF">325</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font>
+             
+             &nbsp;<font color="#FFFFFF">beep</font><font color="#FFFFFF">(</font><font color="#FFFFFF">aS</font><font color="#434f54">,</font> <font color="#FFFFFF">250</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font>
+             &nbsp;<font color="#FFFFFF">beep</font><font color="#FFFFFF">(</font><font color="#FFFFFF">dSH</font><font color="#434f54">,</font> <font color="#FFFFFF">500</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font>
+             &nbsp;<font color="#FFFFFF">beep</font><font color="#FFFFFF">(</font><font color="#FFFFFF">dH</font><font color="#434f54">,</font> <font color="#FFFFFF">325</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font> &nbsp;
+             &nbsp;<font color="#FFFFFF">beep</font><font color="#FFFFFF">(</font><font color="#FFFFFF">cSH</font><font color="#434f54">,</font> <font color="#FFFFFF">175</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font> &nbsp;
+             &nbsp;<font color="#FFFFFF">beep</font><font color="#FFFFFF">(</font><font color="#FFFFFF">cH</font><font color="#434f54">,</font> <font color="#FFFFFF">125</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font> &nbsp;
+             &nbsp;<font color="#FFFFFF">beep</font><font color="#FFFFFF">(</font><font color="#FFFFFF">b</font><font color="#434f54">,</font> <font color="#FFFFFF">125</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font> &nbsp;
+             &nbsp;<font color="#FFFFFF">beep</font><font color="#FFFFFF">(</font><font color="#FFFFFF">cH</font><font color="#434f54">,</font> <font color="#FFFFFF">250</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font> &nbsp;
+             
+             &nbsp;<font color="#d35400">delay</font><font color="#FFFFFF">(</font><font color="#FFFFFF">350</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font>
+            <font color="#FFFFFF">}</font>
+            <font color="#00979c">void</font> <font color="#5e6d03">loop</font><font color="#FFFFFF">(</font><font color="#FFFFFF">)</font>
+            <font color="#FFFFFF">{</font>
+             &nbsp;<font color="#FFFFFF">lcd</font><font color="#434f54">.</font><font color="#d35400">setCursor</font><font color="#FFFFFF">(</font><font color="#FFFFFF">0</font><font color="#434f54">,</font> <font color="#FFFFFF">0</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font>
+             &nbsp;<font color="#FFFFFF">lcd</font><font color="#434f54">.</font><font color="#d35400">write</font><font color="#FFFFFF">(</font><font color="#00979c">byte</font><font color="#FFFFFF">(</font><font color="#FFFFFF">4</font><font color="#FFFFFF">)</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font> 
+             &nbsp;<font color="#FFFFFF">lcd</font><font color="#434f54">.</font><font color="#d35400">setCursor</font><font color="#FFFFFF">(</font><font color="#FFFFFF">15</font><font color="#434f54">,</font> <font color="#FFFFFF">0</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font>
+             &nbsp;<font color="#FFFFFF">lcd</font><font color="#434f54">.</font><font color="#d35400">write</font><font color="#FFFFFF">(</font><font color="#00979c">byte</font><font color="#FFFFFF">(</font><font color="#FFFFFF">4</font><font color="#FFFFFF">)</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font> &nbsp;&nbsp;
+             &nbsp;<font color="#FFFFFF">pixels</font><font color="#434f54">.</font><font color="#d35400">clear</font><font color="#FFFFFF">(</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font>
+             &nbsp;&nbsp;<font color="#5e6d03">while</font><font color="#FFFFFF">(</font><font color="#d35400">digitalRead</font><font color="#FFFFFF">(</font><font color="#FFFFFF">BUTTON_C</font><font color="#FFFFFF">)</font> <font color="#434f54">==</font> <font color="#FFFFFF">ACTIVATED</font><font color="#FFFFFF">)</font>
+             &nbsp;<font color="#FFFFFF">{</font>
+             &nbsp;&nbsp;&nbsp;<font color="#FFFFFF">lcd</font><font color="#434f54">.</font><font color="#d35400">clear</font><font color="#FFFFFF">(</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font>
+             &nbsp;&nbsp;&nbsp;<font color="#FFFFFF">lcd</font><font color="#434f54">.</font><font color="#d35400">setCursor</font><font color="#FFFFFF">(</font><font color="#FFFFFF">4</font><font color="#434f54">,</font> <font color="#FFFFFF">0</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font>
+             &nbsp;&nbsp;&nbsp;<font color="#FFFFFF">lcd</font><font color="#434f54">.</font><font color="#d35400">print</font><font color="#FFFFFF">(</font><font color="#005c5f">&#34;Minions&#34;</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font>
+             &nbsp;&nbsp;&nbsp;<font color="#5e6d03">for</font><font color="#FFFFFF">(</font><font color="#00979c">int</font> <font color="#FFFFFF">i</font><font color="#434f54">=</font><font color="#FFFFFF">0</font><font color="#FFFFFF">;</font> <font color="#FFFFFF">i</font><font color="#434f54">&lt;</font><font color="#FFFFFF">1</font><font color="#FFFFFF">;</font> <font color="#FFFFFF">i</font><font color="#434f54">++</font><font color="#FFFFFF">)</font> <font color="#FFFFFF">{</font> 
+             &nbsp;&nbsp;&nbsp;<font color="#FFFFFF">pixels</font><font color="#434f54">.</font><font color="#FFFFFF">setPixelColor</font><font color="#FFFFFF">(</font><font color="#FFFFFF">i</font><font color="#434f54">,</font> <font color="#FFFFFF">pixels</font><font color="#434f54">.</font><font color="#FFFFFF">Color</font><font color="#FFFFFF">(</font><font color="#FFFFFF">225</font><font color="#434f54">,</font> <font color="#FFFFFF">50</font><font color="#434f54">,</font> <font color="#FFFFFF">0</font><font color="#FFFFFF">)</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font>
+            
+             &nbsp;&nbsp;&nbsp;<font color="#FFFFFF">pixels</font><font color="#434f54">.</font><font color="#FFFFFF">show</font><font color="#FFFFFF">(</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font> &nbsp;&nbsp;
+             &nbsp;&nbsp;&nbsp;<font color="#FFFFFF">}</font>
+             &nbsp;&nbsp;&nbsp;<font color="#5e6d03">if</font> <font color="#FFFFFF">(</font><font color="#d35400">analogRead</font><font color="#FFFFFF">(</font><font color="#FFFFFF">A0</font><font color="#FFFFFF">)</font> <font color="#434f54">&gt;</font> <font color="#FFFFFF">1000</font><font color="#FFFFFF">)</font> &nbsp;<font color="#FFFFFF">{</font>
+             &nbsp;&nbsp;&nbsp;<font color="#d35400">tone</font><font color="#FFFFFF">(</font><font color="#FFFFFF">11</font><font color="#434f54">,</font> <font color="#FFFFFF">740</font><font color="#434f54">,</font> <font color="#FFFFFF">200</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font>
+             &nbsp;&nbsp;&nbsp;<font color="#d35400">delay</font><font color="#FFFFFF">(</font><font color="#FFFFFF">100</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font>
+             &nbsp;&nbsp;&nbsp;<font color="#FFFFFF">}</font>
+            
+             &nbsp;&nbsp;&nbsp;<font color="#5e6d03">if</font> <font color="#FFFFFF">(</font><font color="#d35400">analogRead</font><font color="#FFFFFF">(</font><font color="#FFFFFF">A1</font><font color="#FFFFFF">)</font> <font color="#434f54">&gt;</font> <font color="#FFFFFF">1000</font><font color="#FFFFFF">)</font> &nbsp;<font color="#FFFFFF">{</font>
+             &nbsp;&nbsp;&nbsp;<font color="#d35400">tone</font><font color="#FFFFFF">(</font><font color="#FFFFFF">11</font><font color="#434f54">,</font> <font color="#FFFFFF">831</font><font color="#434f54">,</font> <font color="#FFFFFF">200</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font>
+             &nbsp;&nbsp;&nbsp;<font color="#d35400">delay</font><font color="#FFFFFF">(</font><font color="#FFFFFF">100</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font>
+             &nbsp;&nbsp;&nbsp;<font color="#FFFFFF">}</font>
+            
+             &nbsp;&nbsp;&nbsp;<font color="#5e6d03">if</font> <font color="#FFFFFF">(</font><font color="#d35400">analogRead</font><font color="#FFFFFF">(</font><font color="#FFFFFF">A2</font><font color="#FFFFFF">)</font> <font color="#434f54">&gt;</font> <font color="#FFFFFF">1000</font><font color="#FFFFFF">)</font> &nbsp;<font color="#FFFFFF">{</font>
+             &nbsp;&nbsp;&nbsp;<font color="#d35400">tone</font><font color="#FFFFFF">(</font><font color="#FFFFFF">11</font><font color="#434f54">,</font> <font color="#FFFFFF">880</font><font color="#434f54">,</font> <font color="#FFFFFF">200</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font>
+             &nbsp;&nbsp;&nbsp;<font color="#d35400">delay</font><font color="#FFFFFF">(</font><font color="#FFFFFF">100</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font>
+             &nbsp;&nbsp;&nbsp;<font color="#FFFFFF">}</font>
+            
+             &nbsp;&nbsp;&nbsp;<font color="#5e6d03">if</font> <font color="#FFFFFF">(</font><font color="#d35400">analogRead</font><font color="#FFFFFF">(</font><font color="#FFFFFF">A3</font><font color="#FFFFFF">)</font> <font color="#434f54">&gt;</font> <font color="#FFFFFF">1000</font><font color="#FFFFFF">)</font> &nbsp;<font color="#FFFFFF">{</font>
+             &nbsp;&nbsp;&nbsp;<font color="#d35400">tone</font><font color="#FFFFFF">(</font><font color="#FFFFFF">11</font><font color="#434f54">,</font> <font color="#FFFFFF">587</font><font color="#434f54">,</font> <font color="#FFFFFF">200</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font>
+             &nbsp;&nbsp;&nbsp;<font color="#d35400">delay</font><font color="#FFFFFF">(</font><font color="#FFFFFF">100</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font>
+             &nbsp;&nbsp;&nbsp;<font color="#FFFFFF">}</font>
+            
+             &nbsp;&nbsp;&nbsp;<font color="#5e6d03">if</font> <font color="#FFFFFF">(</font><font color="#d35400">analogRead</font><font color="#FFFFFF">(</font><font color="#FFFFFF">A4</font><font color="#FFFFFF">)</font> <font color="#434f54">&gt;</font> <font color="#FFFFFF">1000</font><font color="#FFFFFF">)</font> &nbsp;<font color="#FFFFFF">{</font>
+             &nbsp;&nbsp;&nbsp;<font color="#d35400">tone</font><font color="#FFFFFF">(</font><font color="#FFFFFF">11</font><font color="#434f54">,</font> <font color="#FFFFFF">554</font><font color="#434f54">,</font> <font color="#FFFFFF">200</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font>
+             &nbsp;&nbsp;&nbsp;<font color="#d35400">delay</font><font color="#FFFFFF">(</font><font color="#FFFFFF">100</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font>
+             &nbsp;&nbsp;&nbsp;<font color="#FFFFFF">}</font>
+            
+             &nbsp;&nbsp;&nbsp;<font color="#5e6d03">if</font> <font color="#FFFFFF">(</font><font color="#d35400">analogRead</font><font color="#FFFFFF">(</font><font color="#FFFFFF">A5</font><font color="#FFFFFF">)</font> <font color="#434f54">&gt;</font> <font color="#FFFFFF">1000</font><font color="#FFFFFF">)</font> &nbsp;<font color="#FFFFFF">{</font>
+             &nbsp;&nbsp;&nbsp;<font color="#d35400">tone</font><font color="#FFFFFF">(</font><font color="#FFFFFF">11</font><font color="#434f54">,</font> <font color="#FFFFFF">659</font><font color="#434f54">,</font> <font color="#FFFFFF">200</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font>
+             &nbsp;&nbsp;&nbsp;<font color="#d35400">delay</font><font color="#FFFFFF">(</font><font color="#FFFFFF">100</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font>
+             &nbsp;&nbsp;&nbsp;<font color="#FFFFFF">}</font>
+             &nbsp;&nbsp;&nbsp;
+             &nbsp;<font color="#FFFFFF">}</font>
+             &nbsp;<font color="#5e6d03">while</font><font color="#FFFFFF">(</font><font color="#d35400">digitalRead</font><font color="#FFFFFF">(</font><font color="#FFFFFF">BUTTON_F</font><font color="#FFFFFF">)</font> <font color="#434f54">==</font> <font color="#FFFFFF">ACTIVATED</font><font color="#FFFFFF">)</font>
+             &nbsp;<font color="#FFFFFF">{</font>
+             &nbsp;&nbsp;&nbsp;<font color="#FFFFFF">lcd</font><font color="#434f54">.</font><font color="#d35400">clear</font><font color="#FFFFFF">(</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font>
+             &nbsp;&nbsp;&nbsp;<font color="#FFFFFF">lcd</font><font color="#434f54">.</font><font color="#d35400">setCursor</font><font color="#FFFFFF">(</font><font color="#FFFFFF">4</font><font color="#434f54">,</font> <font color="#FFFFFF">0</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font>
+             &nbsp;&nbsp;&nbsp;<font color="#FFFFFF">lcd</font><font color="#434f54">.</font><font color="#d35400">print</font><font color="#FFFFFF">(</font><font color="#005c5f">&#34;Starwars&#34;</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font>
+             &nbsp;&nbsp;&nbsp;<font color="#5e6d03">for</font><font color="#FFFFFF">(</font><font color="#00979c">int</font> <font color="#FFFFFF">i</font><font color="#434f54">=</font><font color="#FFFFFF">0</font><font color="#FFFFFF">;</font> <font color="#FFFFFF">i</font><font color="#434f54">&lt;</font><font color="#FFFFFF">5</font><font color="#FFFFFF">;</font> <font color="#FFFFFF">i</font><font color="#434f54">++</font><font color="#FFFFFF">)</font> <font color="#FFFFFF">{</font> 
+             &nbsp;&nbsp;&nbsp;<font color="#FFFFFF">pixels</font><font color="#434f54">.</font><font color="#FFFFFF">setPixelColor</font><font color="#FFFFFF">(</font><font color="#FFFFFF">i</font><font color="#434f54">,</font> <font color="#FFFFFF">pixels</font><font color="#434f54">.</font><font color="#FFFFFF">Color</font><font color="#FFFFFF">(</font><font color="#FFFFFF">250</font><font color="#434f54">,</font> <font color="#FFFFFF">150</font><font color="#434f54">,</font> <font color="#FFFFFF">150</font><font color="#FFFFFF">)</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font>
+             &nbsp;&nbsp;&nbsp;
+             &nbsp;&nbsp;&nbsp;<font color="#FFFFFF">pixels</font><font color="#434f54">.</font><font color="#FFFFFF">show</font><font color="#FFFFFF">(</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font> &nbsp;&nbsp;
+             &nbsp;&nbsp;&nbsp;<font color="#FFFFFF">}</font>
+             &nbsp;&nbsp;&nbsp;<font color="#5e6d03">for</font><font color="#FFFFFF">(</font><font color="#00979c">int</font> <font color="#FFFFFF">a</font><font color="#434f54">=</font><font color="#FFFFFF">0</font><font color="#FFFFFF">;</font> <font color="#FFFFFF">a</font><font color="#434f54">&lt;</font><font color="#FFFFFF">1</font><font color="#FFFFFF">;</font> <font color="#FFFFFF">a</font><font color="#434f54">++</font><font color="#FFFFFF">)</font><font color="#FFFFFF">{</font>
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#5e6d03">if</font> <font color="#FFFFFF">(</font><font color="#d35400">digitalRead</font><font color="#FFFFFF">(</font><font color="#FFFFFF">BUTTON_D</font><font color="#FFFFFF">)</font> <font color="#434f54">==</font> <font color="#FFFFFF">ACTIVATED</font><font color="#FFFFFF">)</font><font color="#FFFFFF">{</font>
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#d35400">noTone</font><font color="#FFFFFF">(</font><font color="#FFFFFF">PIEZO</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font>
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#5e6d03">break</font><font color="#FFFFFF">;</font>
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#FFFFFF">}</font>
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#FFFFFF">firstSection</font><font color="#FFFFFF">(</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font>
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#FFFFFF">secondSection</font><font color="#FFFFFF">(</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font>
+             &nbsp;&nbsp;&nbsp;<font color="#FFFFFF">}</font>
+             &nbsp;<font color="#FFFFFF">}</font>
+            
+             &nbsp;<font color="#5e6d03">while</font><font color="#FFFFFF">(</font><font color="#d35400">digitalRead</font><font color="#FFFFFF">(</font><font color="#FFFFFF">BUTTON_D</font><font color="#FFFFFF">)</font> <font color="#434f54">==</font> <font color="#FFFFFF">ACTIVATED</font><font color="#FFFFFF">)</font>
+             &nbsp;<font color="#FFFFFF">{</font>
+             &nbsp;&nbsp;&nbsp;<font color="#FFFFFF">lcd</font><font color="#434f54">.</font><font color="#d35400">clear</font><font color="#FFFFFF">(</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font>
+             &nbsp;&nbsp;&nbsp;<font color="#FFFFFF">lcd</font><font color="#434f54">.</font><font color="#d35400">setCursor</font><font color="#FFFFFF">(</font><font color="#FFFFFF">3</font><font color="#434f54">,</font> <font color="#FFFFFF">0</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font>
+             &nbsp;&nbsp;&nbsp;<font color="#FFFFFF">lcd</font><font color="#434f54">.</font><font color="#d35400">print</font><font color="#FFFFFF">(</font><font color="#005c5f">&#34;More songs&#34;</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font>
+             &nbsp;&nbsp;&nbsp;<font color="#FFFFFF">lcd</font><font color="#434f54">.</font><font color="#d35400">setCursor</font><font color="#FFFFFF">(</font><font color="#FFFFFF">5</font><font color="#434f54">,</font> <font color="#FFFFFF">1</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font>
+             &nbsp;&nbsp;&nbsp;<font color="#FFFFFF">lcd</font><font color="#434f54">.</font><font color="#d35400">print</font><font color="#FFFFFF">(</font><font color="#005c5f">&#34;coming&#34;</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font>
+             &nbsp;<font color="#FFFFFF">}</font>
+             &nbsp;
+             &nbsp;<font color="#5e6d03">while</font><font color="#FFFFFF">(</font><font color="#d35400">digitalRead</font><font color="#FFFFFF">(</font><font color="#FFFFFF">BUTTON_G</font><font color="#FFFFFF">)</font> <font color="#434f54">==</font> <font color="#FFFFFF">ACTIVATED</font><font color="#FFFFFF">)</font>
+             &nbsp;<font color="#FFFFFF">{</font>
+             &nbsp;&nbsp;&nbsp;<font color="#FFFFFF">lcd</font><font color="#434f54">.</font><font color="#d35400">clear</font><font color="#FFFFFF">(</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font>
+             &nbsp;&nbsp;&nbsp;<font color="#FFFFFF">lcd</font><font color="#434f54">.</font><font color="#d35400">setCursor</font><font color="#FFFFFF">(</font><font color="#FFFFFF">2</font><font color="#434f54">,</font> <font color="#FFFFFF">0</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font>
+             &nbsp;&nbsp;&nbsp;<font color="#FFFFFF">lcd</font><font color="#434f54">.</font><font color="#d35400">print</font><font color="#FFFFFF">(</font><font color="#005c5f">&#34;Pirate of the&#34;</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font>
+             &nbsp;&nbsp;&nbsp;<font color="#FFFFFF">lcd</font><font color="#434f54">.</font><font color="#d35400">setCursor</font><font color="#FFFFFF">(</font><font color="#FFFFFF">4</font><font color="#434f54">,</font> <font color="#FFFFFF">1</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font>
+             &nbsp;&nbsp;&nbsp;<font color="#FFFFFF">lcd</font><font color="#434f54">.</font><font color="#d35400">print</font><font color="#FFFFFF">(</font><font color="#005c5f">&#34;Caribbean&#34;</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font>
+             &nbsp;&nbsp;&nbsp;<font color="#5e6d03">for</font><font color="#FFFFFF">(</font><font color="#00979c">int</font> <font color="#FFFFFF">i</font><font color="#434f54">=</font><font color="#FFFFFF">0</font><font color="#FFFFFF">;</font> <font color="#FFFFFF">i</font><font color="#434f54">&lt;</font><font color="#FFFFFF">5</font><font color="#FFFFFF">;</font> <font color="#FFFFFF">i</font><font color="#434f54">++</font><font color="#FFFFFF">)</font> <font color="#FFFFFF">{</font> 
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#FFFFFF">pixels</font><font color="#434f54">.</font><font color="#FFFFFF">setPixelColor</font><font color="#FFFFFF">(</font><font color="#FFFFFF">i</font><font color="#434f54">,</font> <font color="#FFFFFF">pixels</font><font color="#434f54">.</font><font color="#FFFFFF">Color</font><font color="#FFFFFF">(</font><font color="#FFFFFF">0</font><font color="#434f54">,</font> <font color="#FFFFFF">150</font><font color="#434f54">,</font> <font color="#FFFFFF">150</font><font color="#FFFFFF">)</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font>
+            
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#FFFFFF">pixels</font><font color="#434f54">.</font><font color="#FFFFFF">show</font><font color="#FFFFFF">(</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font> &nbsp;&nbsp;
+             &nbsp;&nbsp;&nbsp;<font color="#FFFFFF">}</font>
+             &nbsp;&nbsp;&nbsp;<font color="#00979c">const</font> <font color="#00979c">float</font> <font color="#FFFFFF">songSpeed</font> <font color="#434f54">=</font> <font color="#FFFFFF">1.0</font><font color="#FFFFFF">;</font>
+             &nbsp;&nbsp;&nbsp;<font color="#00979c">const</font> <font color="#00979c">int</font> <font color="#FFFFFF">buzzer</font> <font color="#434f54">=</font> <font color="#FFFFFF">11</font><font color="#FFFFFF">;</font>
+             &nbsp;&nbsp;&nbsp;<font color="#00979c">const</font> <font color="#00979c">int</font> <font color="#FFFFFF">totalNotes</font> <font color="#434f54">=</font> <font color="#00979c">sizeof</font><font color="#FFFFFF">(</font><font color="#FFFFFF">notes</font><font color="#FFFFFF">)</font> <font color="#434f54">&#47;</font> <font color="#00979c">sizeof</font><font color="#FFFFFF">(</font><font color="#00979c">int</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font>
+             &nbsp;&nbsp;&nbsp;<font color="#5e6d03">for</font> <font color="#FFFFFF">(</font><font color="#00979c">int</font> <font color="#FFFFFF">i</font> <font color="#434f54">=</font> <font color="#FFFFFF">0</font><font color="#FFFFFF">;</font> <font color="#FFFFFF">i</font> <font color="#434f54">&lt;</font> <font color="#FFFFFF">totalNotes</font><font color="#FFFFFF">;</font> <font color="#FFFFFF">i</font><font color="#434f54">++</font><font color="#FFFFFF">)</font>
+             &nbsp;&nbsp;&nbsp;<font color="#FFFFFF">{</font>
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#00979c">const</font> <font color="#00979c">int</font> <font color="#FFFFFF">currentNote</font> <font color="#434f54">=</font> <font color="#FFFFFF">notes</font><font color="#FFFFFF">[</font><font color="#FFFFFF">i</font><font color="#FFFFFF">]</font><font color="#FFFFFF">;</font>
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#00979c">float</font> <font color="#FFFFFF">wait</font> <font color="#434f54">=</font> <font color="#FFFFFF">durations</font><font color="#FFFFFF">[</font><font color="#FFFFFF">i</font><font color="#FFFFFF">]</font> <font color="#434f54">&#47;</font> <font color="#FFFFFF">songSpeed</font><font color="#FFFFFF">;</font>
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#d35400">tone</font><font color="#FFFFFF">(</font><font color="#FFFFFF">buzzer</font><font color="#434f54">,</font> <font color="#FFFFFF">notes</font><font color="#FFFFFF">[</font><font color="#FFFFFF">i</font><font color="#FFFFFF">]</font><font color="#434f54">,</font> <font color="#FFFFFF">wait</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font> <font color="#434f54">&#47;&#47; tone(pin, frequency, duration)</font>
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#5e6d03">if</font> <font color="#FFFFFF">(</font><font color="#FFFFFF">currentNote</font> <font color="#434f54">!=</font> <font color="#FFFFFF">0</font><font color="#FFFFFF">)</font>
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#FFFFFF">{</font>
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#d35400">tone</font><font color="#FFFFFF">(</font><font color="#FFFFFF">buzzer</font><font color="#434f54">,</font> <font color="#FFFFFF">notes</font><font color="#FFFFFF">[</font><font color="#FFFFFF">i</font><font color="#FFFFFF">]</font><font color="#434f54">,</font> <font color="#FFFFFF">wait</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font> <font color="#434f54">&#47;&#47; tone(pin, frequency, duration)</font>
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#FFFFFF">}</font>
+             &nbsp;&nbsp;&nbsp;
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#5e6d03">else</font> <font color="#5e6d03">if</font> <font color="#FFFFFF">(</font><font color="#d35400">digitalRead</font><font color="#FFFFFF">(</font><font color="#FFFFFF">BUTTON_D</font><font color="#FFFFFF">)</font> <font color="#434f54">==</font> <font color="#FFFFFF">ACTIVATED</font><font color="#FFFFFF">)</font><font color="#FFFFFF">{</font>
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#d35400">noTone</font><font color="#FFFFFF">(</font><font color="#FFFFFF">PIEZO</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font>
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#5e6d03">break</font><font color="#FFFFFF">;</font>
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#FFFFFF">}</font> 
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#5e6d03">else</font> 
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#FFFFFF">{</font> 
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#d35400">noTone</font><font color="#FFFFFF">(</font><font color="#FFFFFF">buzzer</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font>
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#FFFFFF">}</font>
+             &nbsp;&nbsp;&nbsp;<font color="#434f54">&#47;&#47; delay is used to wait for tone to finish playing before moving to next loop</font>
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#d35400">delay</font><font color="#FFFFFF">(</font><font color="#FFFFFF">wait</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font> 
+             &nbsp;&nbsp;&nbsp;<font color="#FFFFFF">}</font>
+             &nbsp;&nbsp;&nbsp;
+             &nbsp;&nbsp;&nbsp;
+             &nbsp;&nbsp;&nbsp;
+             &nbsp;<font color="#FFFFFF">}</font>
+             &nbsp;&nbsp;<font color="#5e6d03">while</font><font color="#FFFFFF">(</font><font color="#d35400">digitalRead</font><font color="#FFFFFF">(</font><font color="#FFFFFF">BUTTON_E</font><font color="#FFFFFF">)</font> <font color="#434f54">==</font> <font color="#FFFFFF">ACTIVATED</font><font color="#FFFFFF">)</font>
+             &nbsp;<font color="#FFFFFF">{</font>
+             &nbsp;&nbsp;&nbsp;<font color="#FFFFFF">lcd</font><font color="#434f54">.</font><font color="#d35400">clear</font><font color="#FFFFFF">(</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font>
+             &nbsp;&nbsp;&nbsp;<font color="#FFFFFF">lcd</font><font color="#434f54">.</font><font color="#d35400">setCursor</font><font color="#FFFFFF">(</font><font color="#FFFFFF">4</font><font color="#434f54">,</font> <font color="#FFFFFF">0</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font>
+             &nbsp;&nbsp;&nbsp;<font color="#FFFFFF">lcd</font><font color="#434f54">.</font><font color="#d35400">print</font><font color="#FFFFFF">(</font><font color="#005c5f">&#34;Unravel&#34;</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font>
+             &nbsp;&nbsp;&nbsp;<font color="#5e6d03">for</font><font color="#FFFFFF">(</font><font color="#00979c">int</font> <font color="#FFFFFF">i</font><font color="#434f54">=</font><font color="#FFFFFF">0</font><font color="#FFFFFF">;</font> <font color="#FFFFFF">i</font><font color="#434f54">&lt;</font><font color="#FFFFFF">5</font> <font color="#FFFFFF">;</font> <font color="#FFFFFF">i</font><font color="#434f54">++</font><font color="#FFFFFF">)</font> <font color="#FFFFFF">{</font> 
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#FFFFFF">pixels</font><font color="#434f54">.</font><font color="#FFFFFF">setPixelColor</font><font color="#FFFFFF">(</font><font color="#FFFFFF">i</font><font color="#434f54">,</font> <font color="#FFFFFF">pixels</font><font color="#434f54">.</font><font color="#FFFFFF">Color</font><font color="#FFFFFF">(</font><font color="#FFFFFF">88</font><font color="#434f54">,</font> <font color="#FFFFFF">88</font><font color="#434f54">,</font> <font color="#FFFFFF">88</font><font color="#FFFFFF">)</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font>
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#FFFFFF">pixels</font><font color="#434f54">.</font><font color="#FFFFFF">show</font><font color="#FFFFFF">(</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font> &nbsp;&nbsp;
+             &nbsp;&nbsp;&nbsp;<font color="#FFFFFF">}</font>
+             &nbsp;&nbsp;&nbsp;<font color="#5e6d03">if</font> <font color="#FFFFFF">(</font><font color="#d35400">digitalRead</font><font color="#FFFFFF">(</font><font color="#FFFFFF">BUTTON_D</font><font color="#FFFFFF">)</font> <font color="#434f54">==</font> <font color="#FFFFFF">ACTIVATED</font><font color="#FFFFFF">)</font><font color="#FFFFFF">{</font>
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#d35400">noTone</font><font color="#FFFFFF">(</font><font color="#FFFFFF">PIEZO</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font>
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#5e6d03">break</font><font color="#FFFFFF">;</font><font color="#FFFFFF">}</font>
+             &nbsp;&nbsp;&nbsp;<font color="#5e6d03">for</font> <font color="#FFFFFF">(</font><font color="#00979c">int</font> <font color="#FFFFFF">thisNote</font><font color="#434f54">=</font><font color="#FFFFFF">0</font><font color="#FFFFFF">;</font> <font color="#FFFFFF">thisNote</font> <font color="#434f54">&lt;</font><font color="#FFFFFF">85</font><font color="#FFFFFF">;</font> <font color="#FFFFFF">thisNote</font><font color="#434f54">++</font><font color="#FFFFFF">)</font> <font color="#FFFFFF">{</font>
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#00979c">int</font> <font color="#FFFFFF">noteDuration</font> <font color="#434f54">=</font> <font color="#FFFFFF">600</font> <font color="#434f54">&#47;</font> <font color="#FFFFFF">noteDurations</font><font color="#FFFFFF">[</font><font color="#FFFFFF">thisNote</font><font color="#FFFFFF">]</font><font color="#FFFFFF">;</font>
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#d35400">tone</font><font color="#FFFFFF">(</font><font color="#FFFFFF">11</font><font color="#434f54">,</font> <font color="#FFFFFF">melody</font><font color="#FFFFFF">[</font><font color="#FFFFFF">thisNote</font><font color="#FFFFFF">]</font><font color="#434f54">,</font> <font color="#FFFFFF">noteDuration</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font>
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#00979c">int</font> <font color="#FFFFFF">pauseBetweenNotes</font> <font color="#434f54">=</font> <font color="#FFFFFF">noteDuration</font> <font color="#434f54">*</font> <font color="#FFFFFF">1.50</font><font color="#FFFFFF">;</font>
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#d35400">delay</font><font color="#FFFFFF">(</font><font color="#FFFFFF">pauseBetweenNotes</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font>
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#d35400">noTone</font><font color="#FFFFFF">(</font><font color="#FFFFFF">11</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font>
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#5e6d03">if</font> <font color="#FFFFFF">(</font><font color="#d35400">digitalRead</font><font color="#FFFFFF">(</font><font color="#FFFFFF">BUTTON_D</font><font color="#FFFFFF">)</font> <font color="#434f54">==</font> <font color="#FFFFFF">ACTIVATED</font><font color="#FFFFFF">)</font><font color="#FFFFFF">{</font>
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#d35400">noTone</font><font color="#FFFFFF">(</font><font color="#FFFFFF">PIEZO</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font>
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#5e6d03">break</font><font color="#FFFFFF">;</font>
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#FFFFFF">}</font>
+             &nbsp;&nbsp;&nbsp;<font color="#FFFFFF">}</font>
+             &nbsp;
+             &nbsp;<font color="#FFFFFF">}</font>
+             &nbsp;&nbsp;&nbsp;
+            
+            
+             &nbsp;<font color="#d35400">noTone</font><font color="#FFFFFF">(</font><font color="#FFFFFF">PIEZO</font><font color="#FFFFFF">)</font><font color="#FFFFFF">;</font>
+            
+            <font color="#FFFFFF">}</font>
+            
+            
+            
+             
+            
+            </pre>
         <div id="footer">
             Copyright &copy; 2021 Wan Li Xin Yuan
         </div>
