@@ -78,7 +78,13 @@ li a:hover {background-color: 111}
 	color: red;
 }
 .green{
-	color: greenyellow;
+	color: green;
+}
+.blue{
+	color: blue;
+}
+.purple{
+	color: purple;
 }
 h2.title {text-align: center;}
 h3.title {text-align: center;}
