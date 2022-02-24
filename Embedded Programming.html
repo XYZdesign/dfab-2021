@@ -3,29 +3,32 @@
     <head>
         <title> Embedded Programming</title>
         <link rel="stylesheet" type="text/css" href="Css/style.css">
-     </head>
-     <style>
+    </head>
+    <style>
         h2.title {text-align: center;}
-        body{
-           background-image: url("paper.jpg");
+        html{background: url(Img/Coding\ Wallpapers\ 38.png) no-repeat fixed ; 
+            background-size: cover ;
         }
         ul.end{
             list-style-type: none;
             margin: 0;
             padding: 0;
             overflow: hidden;
-            background-color: #333; }
-         li.end{ float: left;}
-         li.end a {
+            background-color: #333; 
+        }
+        li.end{ float: left;}
+        li.end a {
             display: block;
             color: white;
             text-align: center;
             padding: 14px 16px;
-            text-decoration: none;}
-         li.end a:hover {
-            background-color: 111}
-     </style>
-     <body>
+            text-decoration: none;
+        }
+        li.end a:hover {
+            background-color: 111
+        }
+    </style>
+    <body id = "container">
         <h2 class="title" >Embedded Programming</h2>
         <hr>
         <ul>
@@ -48,12 +51,31 @@
                  <a href="blog.html">Blog Summary</a>            
              </div>
          </li>    
-     </ul>
-     <hr>
-     <h3>Traffic Light System</h3>
-     <p></p>
-     <div id="footer">
-      Copyright &copy; 2021 Wan Li Xin Yuan
-  </div>
-     </body>
+        </ul>
+        <hr>
+        <h2>Traffic Light and Pedestrian Crossing System</h2><br>
+        <h3>Tinkercad</h3>
+        <img src="Img/trafficlighttinkercad.png" alt="Tinkercad"  width="600" height="550">
+        <br><br><h3>Circuit</h3>
+        <img src="Img/trafficlight.jpeg" alt="circuit" width="500" height="400"><br>
+        <br><hr><h2>Program</h2>
+        <p>#define helps to give a certain name to a constant value<br>For example, #define ledG 6, ledG is the name and 6 is the pin number.</p>
+        <img src="Img/code.png" alt="#define"><br>
+        <p>void setup() is a function that only run once.<br>Inside the void, it initialise the variables, pin mode [ pinMode(name,OUTPUT/INPUT) ] and libraries. <br>For example, in order to set ledG and output we write: pinMode(ledG, OUTPUT)</p>
+        <img src="Img/code1.png" alt="void setup()"><br>
+        <p>void loop() is a function that will cause the program to be execute repeatedly.<br>
+            if statement will check if pushbutton is pressed, if = 0 than it is pressed , if = 1 than is not pressed.<br>
+            the statement inside the if will only execute when pushbutton (pb) is 0 (pressed)
+        </p>
+        <img src="Img/code2.png" alt="void loop()"><br>
+        <p>Video of the Traffic Light and Pedestrian Crossing System</p>
+        <video width="600" height="400"controls>
+        <source src="Img/trafficlightdemo.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+        </video>
+        <a href="TrafficLight.zip">Click here to download files.</a>
+        <div id="footer">
+            Copyright &copy; 2021 Wan Li Xin Yuan
+        </div>
+    </body>
 </html>
